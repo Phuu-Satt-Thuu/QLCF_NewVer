@@ -3,44 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\quanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\suasp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suasp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\quanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\suakh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suakh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\quanlysanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlysanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\quanlysanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlysanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\suakh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suakh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\themkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\themkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\themkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\themkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\suasp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suasp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\themsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,48 +19,12 @@
       "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\themsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\themnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\themnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\quanlysanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlysanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\menuquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\menuquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\menuquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\menuquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\quanlymagiamgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlymagiamgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\quanlymagiamgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlymagiamgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\suamagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suamagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\suamaggmua1tang1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suamaggmua1tang1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\suamagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suamagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\suamaggmua1tang1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suamaggmua1tang1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\quanlysanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlysanpham.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\suanv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,28 +35,96 @@
       "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suanv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\themmagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\themmagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\themmagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\themmagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\themnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\themnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\suasp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suasp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\themnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\themnv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\suakh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suakh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\suakh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suakh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\themkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\themkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\themkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\themkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\suamaggmua1tang1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suamaggmua1tang1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\suamaggmua1tang1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suamaggmua1tang1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\suamagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suamagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\suamagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suamagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\themmagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\themmagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\themmagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\themmagg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\quanlymagiamgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlymagiamgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\quanlymagiamgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlymagiamgia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlynhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|c:\\users\\toiye\\downloads\\qlcf_newver\\qlcf_newver\\quanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\quanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\quanlykhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\menuquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\menuquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\menuquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\menuquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\dangnhapquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\dangnhapquanly.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\suasp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|solutionrelative:qlcf_newver\\suasp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A920802-1C2B-4043-A4B4-4F6B84B87E80}|QLCF_NewVer\\QLCF_NewVer.csproj|C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\qlcf_newver\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -146,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -162,294 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "QuanLyKhachHang.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyKhachHang.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLyKhachHang.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyKhachHang.cs [Design]",
-              "RelativeToolTip": "QLCF_NewVer\\QuanLyKhachHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T11:24:46.036Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SuaKH.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaKH.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaKH.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaKH.cs [Design]",
-              "RelativeToolTip": "QLCF_NewVer\\SuaKH.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T11:55:47.36Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "QuanLyKhachHang.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyKhachHang.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLyKhachHang.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyKhachHang.cs",
-              "RelativeToolTip": "QLCF_NewVer\\QuanLyKhachHang.cs",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAAAL0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T11:47:38.036Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QuanLyNhanVien.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyNhanVien.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLyNhanVien.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyNhanVien.cs [Design]",
-              "RelativeToolTip": "QLCF_NewVer\\QuanLyNhanVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T16:57:23.373Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "QuanLySanPham.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLySanPham.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLySanPham.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLySanPham.cs",
-              "RelativeToolTip": "QLCF_NewVer\\QuanLySanPham.cs",
-              "ViewState": "AgIAAL0AAAAAAAAAAAAuwMgAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T08:55:22.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "QuanLyNhanVien.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyNhanVien.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLyNhanVien.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyNhanVien.cs",
-              "RelativeToolTip": "QLCF_NewVer\\QuanLyNhanVien.cs",
-              "ViewState": "AgIAAOUAAAAAAAAAAAAQwPcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T17:06:28.954Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "QuanLySanPham.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLySanPham.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLySanPham.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLySanPham.cs [Design]",
-              "RelativeToolTip": "QLCF_NewVer\\QuanLySanPham.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T02:14:02.222Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ThemSP.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemSP.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemSP.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemSP.cs",
-              "RelativeToolTip": "QLCF_NewVer\\ThemSP.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAYwA8AAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T09:29:39.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "SuaKH.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaKH.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaKH.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaKH.cs",
-              "RelativeToolTip": "QLCF_NewVer\\SuaKH.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAQwF4AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T12:47:57.878Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ThemNV.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemNV.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemNV.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemNV.cs [Design]",
-              "RelativeToolTip": "QLCF_NewVer\\ThemNV.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T17:13:44.576Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ThemSP.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemSP.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemSP.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemSP.cs [Design]",
-              "RelativeToolTip": "QLCF_NewVer\\ThemSP.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T09:18:27.85Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ThemKH.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemKH.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemKH.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemKH.cs [Design]",
-              "RelativeToolTip": "QLCF_NewVer\\ThemKH.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T11:55:36.389Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ThemKH.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemKH.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemKH.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemKH.cs",
-              "RelativeToolTip": "QLCF_NewVer\\ThemKH.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAUwA8AAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T12:35:52.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MenuQuanLy.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\MenuQuanLy.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\MenuQuanLy.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\MenuQuanLy.cs",
-              "RelativeToolTip": "QLCF_NewVer\\MenuQuanLy.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAwDQAAABXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T17:12:09.282Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MenuQuanLy.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\MenuQuanLy.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\MenuQuanLy.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\MenuQuanLy.cs [Design]",
-              "RelativeToolTip": "QLCF_NewVer\\MenuQuanLy.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T12:53:47.915Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "QuanLyMaGiamGia.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyMaGiamGia.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLyMaGiamGia.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyMaGiamGia.cs",
-              "RelativeToolTip": "QLCF_NewVer\\QuanLyMaGiamGia.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T09:09:54.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\Form1.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\Form1.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\Form1.cs [Design]",
-              "RelativeToolTip": "QLCF_NewVer\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T12:04:34.951Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\Form1.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\Form1.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\Form1.cs",
-              "RelativeToolTip": "QLCF_NewVer\\Form1.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAuwBsAAABhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T12:50:07.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "QuanLyMaGiamGia.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyMaGiamGia.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLyMaGiamGia.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyMaGiamGia.cs [Design]",
-              "RelativeToolTip": "QLCF_NewVer\\QuanLyMaGiamGia.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T05:22:30.846Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "SuaMaGGMua1Tang1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGGMua1Tang1.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaMaGGMua1Tang1.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGGMua1Tang1.cs [Design]",
-              "RelativeToolTip": "QLCF_NewVer\\SuaMaGGMua1Tang1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T09:52:45.178Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SuaMaGG.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGG.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaMaGG.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGG.cs [Design]",
-              "RelativeToolTip": "QLCF_NewVer\\SuaMaGG.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T08:10:39.916Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "SuaMaGG.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGG.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaMaGG.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGG.cs",
-              "RelativeToolTip": "QLCF_NewVer\\SuaMaGG.cs",
-              "ViewState": "AgIAANUAAAAAAAAAAAAiwN8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T10:20:47.721Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "SuaNV.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaNV.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaNV.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaNV.cs",
-              "RelativeToolTip": "QLCF_NewVer\\SuaNV.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAmwDEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T17:52:55.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
               "Title": "SuaNV.cs [Design]",
               "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaNV.cs",
               "RelativeDocumentMoniker": "QLCF_NewVer\\SuaNV.cs",
@@ -461,58 +174,70 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "SuaMaGGMua1Tang1.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGGMua1Tang1.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaMaGGMua1Tang1.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGGMua1Tang1.cs",
-              "RelativeToolTip": "QLCF_NewVer\\SuaMaGGMua1Tang1.cs",
-              "ViewState": "AgIAAMwAAAAAAAAAAAAAwNoAAAABAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "SuaNV.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaNV.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaNV.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaNV.cs",
+              "RelativeToolTip": "QLCF_NewVer\\SuaNV.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAkwDoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T10:37:24.205Z",
+              "WhenOpened": "2025-11-07T17:52:55.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ThemMaGG.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemMaGG.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemMaGG.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemMaGG.cs",
-              "RelativeToolTip": "QLCF_NewVer\\ThemMaGG.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ThemSP.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemSP.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemSP.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemSP.cs [Design]",
+              "RelativeToolTip": "QLCF_NewVer\\ThemSP.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T08:21:11.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "ThemMaGG.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemMaGG.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemMaGG.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemMaGG.cs [Design]",
-              "RelativeToolTip": "QLCF_NewVer\\ThemMaGG.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-10T08:10:13.948Z",
+              "WhenOpened": "2025-11-08T09:18:27.85Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ThemNV.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemNV.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemNV.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemNV.cs",
-              "RelativeToolTip": "QLCF_NewVer\\ThemNV.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAABBAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "QuanLySanPham.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLySanPham.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLySanPham.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLySanPham.cs [Design]",
+              "RelativeToolTip": "QLCF_NewVer\\QuanLySanPham.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T17:41:22.365Z",
+              "WhenOpened": "2025-11-08T02:14:02.222Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "QuanLySanPham.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLySanPham.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLySanPham.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLySanPham.cs",
+              "RelativeToolTip": "QLCF_NewVer\\QuanLySanPham.cs",
+              "ViewState": "AgIAAGAAAAAAAAAAAADwv2wAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T08:55:22.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 2,
+              "Title": "ThemSP.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemSP.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemSP.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemSP.cs",
+              "RelativeToolTip": "QLCF_NewVer\\ThemSP.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAowNoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T09:29:39.543Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "SuaSP.cs [Design]",
               "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaSP.cs",
               "RelativeDocumentMoniker": "QLCF_NewVer\\SuaSP.cs",
@@ -524,28 +249,298 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SuaSP.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaSP.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaSP.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaSP.cs",
+              "RelativeToolTip": "QLCF_NewVer\\SuaSP.cs",
+              "ViewState": "AgIAAAoBAAAAAAAAAAAUwJ4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-08T16:04:35.086Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ThemNV.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemNV.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemNV.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemNV.cs",
+              "RelativeToolTip": "QLCF_NewVer\\ThemNV.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAwJ8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T17:41:22.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ThemNV.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemNV.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemNV.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemNV.cs [Design]",
+              "RelativeToolTip": "QLCF_NewVer\\ThemNV.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T17:13:44.576Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SuaKH.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaKH.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaKH.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaKH.cs",
+              "RelativeToolTip": "QLCF_NewVer\\SuaKH.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAowHYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T12:47:57.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SuaKH.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaKH.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaKH.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaKH.cs [Design]",
+              "RelativeToolTip": "QLCF_NewVer\\SuaKH.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T11:55:47.36Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ThemKH.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemKH.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemKH.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemKH.cs",
+              "RelativeToolTip": "QLCF_NewVer\\ThemKH.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAIwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T12:35:52.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ThemKH.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemKH.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemKH.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemKH.cs [Design]",
+              "RelativeToolTip": "QLCF_NewVer\\ThemKH.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T11:55:36.389Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SuaMaGGMua1Tang1.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGGMua1Tang1.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaMaGGMua1Tang1.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGGMua1Tang1.cs",
+              "RelativeToolTip": "QLCF_NewVer\\SuaMaGGMua1Tang1.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAA8wEsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T10:37:24.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SuaMaGGMua1Tang1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGGMua1Tang1.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaMaGGMua1Tang1.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGGMua1Tang1.cs [Design]",
+              "RelativeToolTip": "QLCF_NewVer\\SuaMaGGMua1Tang1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T09:52:45.178Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SuaMaGG.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGG.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaMaGG.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGG.cs",
+              "RelativeToolTip": "QLCF_NewVer\\SuaMaGG.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAqwEsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T10:20:47.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SuaMaGG.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGG.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaMaGG.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaMaGG.cs [Design]",
+              "RelativeToolTip": "QLCF_NewVer\\SuaMaGG.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T08:10:39.916Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ThemMaGG.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemMaGG.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemMaGG.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemMaGG.cs",
+              "RelativeToolTip": "QLCF_NewVer\\ThemMaGG.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAADwvzsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T08:21:11.616Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ThemMaGG.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemMaGG.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\ThemMaGG.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\ThemMaGG.cs [Design]",
+              "RelativeToolTip": "QLCF_NewVer\\ThemMaGG.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T08:10:13.948Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "QuanLyMaGiamGia.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyMaGiamGia.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLyMaGiamGia.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyMaGiamGia.cs",
+              "RelativeToolTip": "QLCF_NewVer\\QuanLyMaGiamGia.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAADwv3IAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T09:09:54.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "QuanLyMaGiamGia.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyMaGiamGia.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLyMaGiamGia.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyMaGiamGia.cs [Design]",
+              "RelativeToolTip": "QLCF_NewVer\\QuanLyMaGiamGia.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T05:22:30.846Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "QuanLyNhanVien.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyNhanVien.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLyNhanVien.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyNhanVien.cs",
+              "RelativeToolTip": "QLCF_NewVer\\QuanLyNhanVien.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAswDQAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T17:06:28.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "QuanLyNhanVien.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyNhanVien.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLyNhanVien.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyNhanVien.cs [Design]",
+              "RelativeToolTip": "QLCF_NewVer\\QuanLyNhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T16:57:23.373Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "QuanLyKhachHang.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyKhachHang.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLyKhachHang.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyKhachHang.cs",
+              "RelativeToolTip": "QLCF_NewVer\\QuanLyKhachHang.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAUwHMAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T11:47:38.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "QuanLyKhachHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyKhachHang.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\QuanLyKhachHang.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\QuanLyKhachHang.cs [Design]",
+              "RelativeToolTip": "QLCF_NewVer\\QuanLyKhachHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T11:24:46.036Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "MenuQuanLy.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\MenuQuanLy.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\MenuQuanLy.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\MenuQuanLy.cs",
+              "RelativeToolTip": "QLCF_NewVer\\MenuQuanLy.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAAwDQAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T17:12:09.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MenuQuanLy.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\MenuQuanLy.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\MenuQuanLy.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\MenuQuanLy.cs [Design]",
+              "RelativeToolTip": "QLCF_NewVer\\MenuQuanLy.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T12:53:47.915Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 29,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\Form1.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\Form1.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\Form1.cs [Design]",
+              "RelativeToolTip": "QLCF_NewVer\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T12:04:34.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\Form1.cs",
+              "RelativeDocumentMoniker": "QLCF_NewVer\\Form1.cs",
+              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\Form1.cs",
+              "RelativeToolTip": "QLCF_NewVer\\Form1.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwBsAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-07T12:50:07.37Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "DangNhapQuanLy.cs [Design]",
               "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\DangNhapQuanLy.cs",
               "RelativeDocumentMoniker": "QLCF_NewVer\\DangNhapQuanLy.cs",
               "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\DangNhapQuanLy.cs [Design]",
               "RelativeToolTip": "QLCF_NewVer\\DangNhapQuanLy.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T12:28:54.917Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "SuaSP.cs",
-              "DocumentMoniker": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaSP.cs",
-              "RelativeDocumentMoniker": "QLCF_NewVer\\SuaSP.cs",
-              "ToolTip": "C:\\Users\\toiye\\Downloads\\QLCF_NewVer\\QLCF_NewVer\\SuaSP.cs",
-              "RelativeToolTip": "QLCF_NewVer\\SuaSP.cs",
-              "ViewState": "AgIAAPIAAAAAAAAAAAAowBABAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-08T16:04:35.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T12:28:54.917Z"
             },
             {
               "$type": "Document",
@@ -557,8 +552,7 @@
               "RelativeToolTip": "QLCF_NewVer\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-11-07T18:09:58.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T18:09:58.933Z"
             },
             {
               "$type": "Document",
@@ -570,8 +564,7 @@
               "RelativeToolTip": "QLCF_NewVer\\Session.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T12:41:44.066Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T12:41:44.066Z"
             },
             {
               "$type": "Document",
@@ -583,8 +576,7 @@
               "RelativeToolTip": "QLCF_NewVer\\DangNhapQuanLy.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAtwEoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-07T12:34:22.245Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-07T12:34:22.245Z"
             }
           ]
         },

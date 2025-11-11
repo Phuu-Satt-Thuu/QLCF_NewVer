@@ -38,20 +38,19 @@ namespace QLCF_NewVer
             // Truy vấn LINQ to SQL để lấy NguoiDung
             // DÙNG SELECT ĐỂ CHỈ LẤY CÁC CỘT CẦN THIẾT
             // **TUYỆT ĐỐI KHÔNG LẤY CỘT MẬT KHẨU**
-            var query = from nv in db.NguoiDungs
-                        select new
-                        {
-                            nv.MaND,
-                            nv.TaiKhoan,
-                            nv.HoTen,
-                            nv.ViTri,
-                            nv.Luong,
-                            nv.SDT,
-                            nv.DiaChi,
-                            nv.Email,
-                            nv.NgaySinh,
-                            nv.TrangThai
-                        };
+            var query = db.NguoiDungs.Select(nv => new
+            {
+                nv.MaND,
+                nv.TaiKhoan,
+                nv.HoTen,
+                nv.ViTri,
+                nv.Luong,
+                nv.SDT,
+                nv.DiaChi,
+                nv.Email,
+                nv.NgaySinh,
+                nv.TrangThai
+            });
 
             // Đặt tên cột cho dễ nhìn
             dgvNhanVien.DataSource = query.ToList();

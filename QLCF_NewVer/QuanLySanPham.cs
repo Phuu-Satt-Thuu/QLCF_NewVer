@@ -44,24 +44,17 @@ namespace QLCF_NewVer
         // 4. HÀM TẢI DỮ LIỆU LÊN DATAGRIDVIEW
         private void LoadData()
         {
-            // Đây là một truy vấn LINQ JOIN 4 bảng
-            // Chỉ lấy sản phẩm ĐANG BÁN (TrangThaiSP == true)
-            var query = from spkc in db.SanPhamKichCos
-                        join sp in db.SanPhams on spkc.MaSP equals sp.MaSP
-                        join loai in db.LoaiSPs on sp.MaLoai equals loai.MaLoai
-                        join size in db.KichCos on spkc.MaKichCo equals size.MaKichCo
-                        //where spkc.TrangThaiSP == true // <-- LOGIC XÓA MỀM
-                        select new
-                        {
-                            spkc.IdSPKC, // Lấy ID để sửa/xóa
-                            sp.MaSP,
-                            sp.TenSP,
-                            size.KichCo1,
-                            spkc.GiaBan,
-                            spkc.SoLuongTon,
-                            loai.TenLoai,
-                            spkc.TrangThaiSP
-                        };
+            var query = db.SanPhamKichCos.Select(spkc => new
+            {
+                spkc.IdSPKC,
+                spkc.MaSP,
+                spkc.SanPham.TenSP,                  // Lấy TenSP từ bảng SanPham
+                KichCo1 = spkc.KichCo.KichCo1,       // Lấy KichCo1 từ bảng KichCo
+                spkc.GiaBan,
+                spkc.SoLuongTon,
+                TenLoai = spkc.SanPham.LoaiSP.TenLoai, // Lấy TenLoai từ bảng LoaiSP
+                spkc.TrangThaiSP
+            });
 
             dgvSanPham.DataSource = query.ToList();
 
@@ -103,21 +96,17 @@ namespace QLCF_NewVer
             }
 
             // Chạy query cuối cùng để hiển thị (Join 4 bảng)
-            var result = from spkc in query
-                         join sp in db.SanPhams on spkc.MaSP equals sp.MaSP
-                         join loai in db.LoaiSPs on sp.MaLoai equals loai.MaLoai
-                         join size in db.KichCos on spkc.MaKichCo equals size.MaKichCo
-                         select new
-                         {
-                             spkc.IdSPKC,
-                             sp.MaSP,
-                             sp.TenSP,
-                             size.KichCo1,
-                             spkc.GiaBan,
-                             spkc.SoLuongTon,
-                             loai.TenLoai,
-                             spkc.TrangThaiSP
-                         };
+            var result = query.Select(spkc => new
+            {
+                spkc.IdSPKC,
+                spkc.MaSP,
+                spkc.SanPham.TenSP,
+                KichCo1 = spkc.KichCo.KichCo1,
+                spkc.GiaBan,
+                spkc.SoLuongTon,
+                TenLoai = spkc.SanPham.LoaiSP.TenLoai,
+                spkc.TrangThaiSP
+            });
 
             dgvSanPham.DataSource = result.ToList();
         }

@@ -65,17 +65,15 @@ namespace QLCF_NewVer
                 dgvSanPham.Columns.Add(chkChon);
             }
 
-            var query = from spkc in db.SanPhamKichCos
-                        join sp in db.SanPhams on spkc.MaSP equals sp.MaSP
-                        join size in db.KichCos on spkc.MaKichCo equals size.MaKichCo
-                        where spkc.TrangThaiSP == true
-                        select new
-                        {
-                            spkc.IdSPKC,
-                            sp.TenSP,
-                            KichCo = size.KichCo1, // Sửa thành KichCo1
-                            spkc.GiaBan
-                        };
+            var query = db.SanPhamKichCos
+        .Where(spkc => spkc.TrangThaiSP == true) // Lọc trước
+        .Select(spkc => new // Chọn (Select)
+        {
+            spkc.IdSPKC,
+            TenSP = spkc.SanPham.TenSP,     // <-- Lấy từ bảng SanPhams qua Navigation
+            KichCo = spkc.KichCo.KichCo1, // <-- Lấy từ bảng KichCos qua Navigation
+            spkc.GiaBan
+        });
 
             dgvSanPham.DataSource = query.ToList();
             dgvSanPham.Columns["IdSPKC"].Visible = false;

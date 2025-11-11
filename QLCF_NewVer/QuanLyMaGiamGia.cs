@@ -40,21 +40,22 @@ namespace QLCF_NewVer
 
         private void LoadData()
         {
-            var query = from v in db.Vouchers
-                        join k in db.KieuVCs on v.MaLoaiVC equals k.MaLoaiVC
-                        select new
-                        {
-                            v.MaVC,
-                            v.Code,
-                            v.TenMaGiamGia,
-                            k.TenLoai,
-                            v.GiaTri,
-                            v.DieuKien,
-                            v.NgayBD,
-                            v.NgayKT,
-                            // Thêm cột trạng thái logic
-                            TrangThai = (v.NgayKT >= DateTime.Today) ? "Đang hoạt động" : "Đã hết hạn"
-                        };
+            var query = db.Vouchers.Join(db.KieuVCs, // 1. Bảng để join
+        v => v.MaLoaiVC,    // 2. Khóa của bảng Vouchers
+        k => k.MaLoaiVC,    // 3. Khóa của bảng KieuVCs
+        (v, k) => new       // 4. Hàm Select kết quả
+        {
+            v.MaVC,
+            v.Code,
+            v.TenMaGiamGia,
+            k.TenLoai, // Lấy TenLoai từ bảng KieuVCs (k)
+            v.GiaTri,
+            v.DieuKien,
+            v.NgayBD,
+            v.NgayKT,
+            // Thêm cột trạng thái logic
+            TrangThai = (v.NgayKT >= DateTime.Today) ? "Đang hoạt động" : "Đã hết hạn"
+        });
 
             dgvMaGiamGia.DataSource = query.ToList();
 
@@ -97,20 +98,21 @@ namespace QLCF_NewVer
             }
 
             // Chạy query cuối cùng để hiển thị
-            var result = from v in query
-                         join k in db.KieuVCs on v.MaLoaiVC equals k.MaLoaiVC
-                         select new
-                         {
-                             v.MaVC,
-                             v.Code,
-                             v.TenMaGiamGia,
-                             k.TenLoai,
-                             v.GiaTri,
-                             v.DieuKien,
-                             v.NgayBD,
-                             v.NgayKT,
-                             TrangThai = (v.NgayKT >= DateTime.Today) ? "Đang hoạt động" : "Đã hết hạn"
-                         };
+            var result = query.Join(db.KieuVCs, // 1. Bảng để join
+        v => v.MaLoaiVC,    // 2. Khóa của bảng 'query' (đã lọc)
+        k => k.MaLoaiVC,    // 3. Khóa của bảng KieuVCs
+        (v, k) => new       // 4. Hàm Select kết quả
+        {
+            v.MaVC,
+            v.Code,
+            v.TenMaGiamGia,
+            k.TenLoai,
+            v.GiaTri,
+            v.DieuKien,
+            v.NgayBD,
+            v.NgayKT,
+            TrangThai = (v.NgayKT >= DateTime.Today) ? "Đang hoạt động" : "Đã hết hạn"
+        });
 
             dgvMaGiamGia.DataSource = result.ToList();
         }

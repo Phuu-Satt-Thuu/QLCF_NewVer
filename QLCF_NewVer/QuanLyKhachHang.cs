@@ -42,18 +42,21 @@ namespace QLCF_NewVer
         private void LoadData()
         {
             // Dùng 'let' để gọi hàm XepLoaiKhachHang
-            var query = from kh in db.KhachHangs
-                        let loaiKH = XepLoaiKhachHang(kh.TichDiem)
-                        select new
-                        {
-                            kh.MaKH,
-                            kh.TenKH,
-                            kh.SDT,
-                            kh.TichDiem,
-                            Loai = loaiKH, // <-- CỘT MỚI
-                            kh.DiaChi,    // <-- CỘT MỚI
-                            kh.NgayTao    // <-- CỘT MỚI
-                        };
+            var query = db.KhachHangs.Select(kh => new
+            {
+                kh.MaKH,
+                kh.TenKH,
+                kh.SDT,
+                kh.TichDiem,
+                // Logic "inline" được dịch trực tiếp sang SQL CASE WHEN
+               Loai = (kh.TichDiem >= 100000) ? "Kim Cương" :
+                        (kh.TichDiem >= 20000) ? "Bạch Kim" :
+                        (kh.TichDiem >= 5000) ? "Vàng" :
+                        (kh.TichDiem >= 1000) ? "Bạc" :
+                        "Đồng",
+                kh.DiaChi,
+                kh.NgayTao
+            });
 
             dgvKhachHang.DataSource = query.ToList();
 
@@ -100,18 +103,20 @@ namespace QLCF_NewVer
             }
 
             // Chạy query và hiển thị kết quả
-            var result = from kh in query
-                         let loaiKH = XepLoaiKhachHang(kh.TichDiem)
-                         select new
-                         {
-                             kh.MaKH,
-                             kh.TenKH,
-                             kh.SDT,
-                             kh.TichDiem,
-                             Loai = loaiKH,
-                             kh.DiaChi,
-                             kh.NgayTao
-                         };
+            var result = query.Select(kh => new
+            {
+                kh.MaKH,
+                kh.TenKH,
+                kh.SDT,
+                kh.TichDiem,
+                Loai = (kh.TichDiem >= 100000) ? "Kim Cương" :
+                        (kh.TichDiem >= 20000) ? "Bạch Kim" :
+                        (kh.TichDiem >= 5000) ? "Vàng" :
+                        (kh.TichDiem >= 1000) ? "Bạc" :
+                        "Đồng",
+                kh.DiaChi,
+                kh.NgayTao
+            });
 
             dgvKhachHang.DataSource = result.ToList();
         }
