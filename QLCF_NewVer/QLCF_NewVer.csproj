@@ -59,11 +59,29 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLichSuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLichSuNhap.Designer.cs">
+      <DependentUpon>FormLichSuNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNhapKho.Designer.cs">
+      <DependentUpon>FormNhapKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MenuQuanLy.Designer.cs">
       <DependentUpon>MenuQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhapMatKhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhapMatKhau.Designer.cs">
+      <DependentUpon>NhapMatKhau.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,6 +95,12 @@
     </Compile>
     <Compile Include="QuanLyKhachHang.Designer.cs">
       <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyKho.Designer.cs">
+      <DependentUpon>QuanLyKho.cs</DependentUpon>
     </Compile>
     <Compile Include="QuanLyMaGiamGia.cs">
       <SubType>Form</SubType>
@@ -95,6 +119,12 @@
     </Compile>
     <Compile Include="QuanLySanPham.Designer.cs">
       <DependentUpon>QuanLySanPham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="Session.cs" />
     <Compile Include="SuaKH.cs">
@@ -157,8 +187,17 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormLichSuNhap.resx">
+      <DependentUpon>FormLichSuNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNhapKho.resx">
+      <DependentUpon>FormNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuQuanLy.resx">
       <DependentUpon>MenuQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhapMatKhau.resx">
+      <DependentUpon>NhapMatKhau.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -173,6 +212,9 @@
     <EmbeddedResource Include="QuanLyKhachHang.resx">
       <DependentUpon>QuanLyKhachHang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyKho.resx">
+      <DependentUpon>QuanLyKho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="QuanLyMaGiamGia.resx">
       <DependentUpon>QuanLyMaGiamGia.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +223,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QuanLySanPham.resx">
       <DependentUpon>QuanLySanPham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuanLyTaiKhoan.resx">
+      <DependentUpon>QuanLyTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SuaKH.resx">
       <DependentUpon>SuaKH.cs</DependentUpon>

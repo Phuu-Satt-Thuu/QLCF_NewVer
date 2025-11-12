@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLCF_NewVer" Class="QLCF_NewVerDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-7660KT7;Initial Catalog=QLCF_NewVer;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="QLCF_NewVer.Properties.Settings" SettingsPropertyName="QLCF_NewVerConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=QLCF_NewVer;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="QLCF_NewVer.Properties.Settings" SettingsPropertyName="QLCF_NewVerConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.XuatKho" Member="XuatKhos">
+    <Type Name="XuatKho">
+      <Column Name="MaXK" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NgayXuat" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Association Name="XuatKho_ChiTietXuatKho" Member="ChiTietXuatKhos" ThisKey="MaXK" OtherKey="MaXK" Type="ChiTietXuatKho" />
+    </Type>
+  </Table>
   <Table Name="dbo.ApMaVC" Member="ApMaVCs">
     <Type Name="ApMaVC">
       <Column Name="MaAP" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -7,13 +14,6 @@
       <Column Name="MaHD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Association Name="HoaDon_ApMaVC" Member="HoaDon" ThisKey="MaHD" OtherKey="MaHD" Type="HoaDon" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
       <Association Name="Voucher_ApMaVC" Member="Voucher" ThisKey="MaVC" OtherKey="MaVC" Type="Voucher" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.XuatKho" Member="XuatKhos">
-    <Type Name="XuatKho">
-      <Column Name="MaXK" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="NgayXuat" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
-      <Association Name="XuatKho_ChiTietXuatKho" Member="ChiTietXuatKhos" ThisKey="MaXK" OtherKey="MaXK" Type="ChiTietXuatKho" />
     </Type>
   </Table>
   <Table Name="dbo.ChamCong" Member="ChamCongs">
@@ -81,8 +81,19 @@
       <Column Name="TongTienSauGiam" Type="System.Decimal" DbType="Decimal(19,2)" IsDbGenerated="true" CanBeNull="true" UpdateCheck="Never" />
       <Association Name="HoaDon_ApMaVC" Member="ApMaVCs" ThisKey="MaHD" OtherKey="MaHD" Type="ApMaVC" />
       <Association Name="HoaDon_ChiTietHD" Member="ChiTietHDs" ThisKey="MaHD" OtherKey="MaHD" Type="ChiTietHD" />
-      <Association Name="NguoiDung_HoaDon" Member="NguoiDung" ThisKey="MaND" OtherKey="MaND" Type="NguoiDung" IsForeignKey="true" />
       <Association Name="KhachHang_HoaDon" Member="KhachHang" ThisKey="MaKH" OtherKey="MaKH" Type="KhachHang" IsForeignKey="true" DeleteRule="SET NULL" />
+      <Association Name="NguoiDung_HoaDon" Member="NguoiDung" ThisKey="MaND" OtherKey="MaND" Type="NguoiDung" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.KhachHang" Member="KhachHangs">
+    <Type Name="KhachHang">
+      <Column Name="MaKH" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TenKH" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="SDT" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="TichDiem" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="NgayTao" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="KhachHang_HoaDon" Member="HoaDons" ThisKey="MaKH" OtherKey="MaKH" Type="HoaDon" />
     </Type>
   </Table>
   <Table Name="dbo.KichCo" Member="KichCos">
@@ -105,6 +116,25 @@
       <Column Name="TenLoai" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
       <Association Name="LoaiSP_SanPham" Member="SanPhams" ThisKey="MaLoai" OtherKey="MaLoai" Type="SanPham" />
       <Association Name="LoaiSP_Voucher" Member="Vouchers" ThisKey="MaLoai" OtherKey="MaLoai" Type="Voucher" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NguoiDung" Member="NguoiDungs">
+    <Type Name="NguoiDung">
+      <Column Name="MaND" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TaiKhoan" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="MatKhau" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
+      <Column Name="Luong" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="HoTen" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="ViTri" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SDT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NganHang" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="STK" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TrangThai" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Association Name="NguoiDung_ChamCong" Member="ChamCongs" ThisKey="MaND" OtherKey="MaND" Type="ChamCong" />
+      <Association Name="NguoiDung_HoaDon" Member="HoaDons" ThisKey="MaND" OtherKey="MaND" Type="HoaDon" />
     </Type>
   </Table>
   <Table Name="dbo.NhaCungCap" Member="NhaCungCaps">
@@ -165,36 +195,6 @@
       <Association Name="Voucher_ChiTietVC" Member="ChiTietVCs" ThisKey="MaVC" OtherKey="MaVC" Type="ChiTietVC" />
       <Association Name="KieuVC_Voucher" Member="KieuVC" ThisKey="MaLoaiVC" OtherKey="MaLoaiVC" Type="KieuVC" IsForeignKey="true" />
       <Association Name="LoaiSP_Voucher" Member="LoaiSP" ThisKey="MaLoai" OtherKey="MaLoai" Type="LoaiSP" IsForeignKey="true" DeleteRule="CASCADE" />
-    </Type>
-  </Table>
-  <Table Name="dbo.NguoiDung" Member="NguoiDungs">
-    <Type Name="NguoiDung">
-      <Column Name="MaND" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="TaiKhoan" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="MatKhau" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
-      <Column Name="Luong" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
-      <Column Name="HoTen" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
-      <Column Name="ViTri" Type="System.String" DbType="NVarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="SDT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="NganHang" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="STK" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="NgaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="TrangThai" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
-      <Association Name="NguoiDung_ChamCong" Member="ChamCongs" ThisKey="MaND" OtherKey="MaND" Type="ChamCong" />
-      <Association Name="NguoiDung_HoaDon" Member="HoaDons" ThisKey="MaND" OtherKey="MaND" Type="HoaDon" />
-    </Type>
-  </Table>
-  <Table Name="dbo.KhachHang" Member="KhachHangs">
-    <Type Name="KhachHang">
-      <Column Name="MaKH" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
-      <Column Name="TenKH" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="SDT" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
-      <Column Name="TichDiem" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DiaChi" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
-      <Column Name="NgayTao" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
-      <Association Name="KhachHang_HoaDon" Member="HoaDons" ThisKey="MaKH" OtherKey="MaKH" Type="HoaDon" />
     </Type>
   </Table>
 </Database>

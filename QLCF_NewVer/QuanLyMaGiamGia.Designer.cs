@@ -84,6 +84,7 @@
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(198, 20);
             this.txtTimKiem.TabIndex = 27;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
             // 
             // label2
             // 
@@ -106,6 +107,7 @@
             this.label1.Size = new System.Drawing.Size(79, 20);
             this.label1.TabIndex = 25;
             this.label1.Text = "Tìm kiếm";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnThemMaGG
             // 
