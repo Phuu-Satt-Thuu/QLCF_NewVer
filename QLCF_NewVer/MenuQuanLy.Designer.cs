@@ -193,8 +193,9 @@
             // quảnLýKhoToolStripMenuItem
             // 
             this.quảnLýKhoToolStripMenuItem.Name = "quảnLýKhoToolStripMenuItem";
-            this.quảnLýKhoToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.quảnLýKhoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.quảnLýKhoToolStripMenuItem.Text = "Quản lý kho";
+            this.quảnLýKhoToolStripMenuItem.Click += new System.EventHandler(this.quảnLýKhoToolStripMenuItem_Click);
             // 
             // tàiKhoảnToolStripMenuItem
             // 

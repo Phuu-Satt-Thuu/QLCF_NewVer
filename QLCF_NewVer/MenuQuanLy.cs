@@ -55,5 +55,11 @@ namespace QLCF_NewVer
             QuanLyKhachHang frm = new QuanLyKhachHang();
             frm.ShowDialog();
         }
+
+        private void quảnLýKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            QuanLyKho frm = new QuanLyKho();
+            frm.ShowDialog();
+        }
     }
 }

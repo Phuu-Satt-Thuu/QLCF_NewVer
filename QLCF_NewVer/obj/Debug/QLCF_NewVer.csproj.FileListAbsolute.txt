@@ -24,3 +24,11 @@ C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.SuaMaGGMu
 C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.QuanLyKhachHang.resources
 C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.ThemKH.resources
 C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.SuaKH.resources
+C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\bin\Debug\itextsharp.dll
+C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\bin\Debug\itextsharp.xml
+C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.QuanLyKho.resources
+C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_New.1B58CFE3.Up2Date
+C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.ThemTonKho.resources
+C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.ThemTonKhoMoi.resources

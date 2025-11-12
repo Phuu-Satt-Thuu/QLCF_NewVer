@@ -80,6 +80,7 @@ namespace QLCF_NewVer
                 khMoi.SDT = sdt;
                 khMoi.DiaChi = diaChi; // diaChi có thể null
                 khMoi.TichDiem = tichDiem;
+                khMoi.NgayTao = DateTime.Now;
                 // khMoi.NgayTao sẽ được CSDL tự động gán
 
                 db.KhachHangs.InsertOnSubmit(khMoi);

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,8 +24,21 @@ namespace QLCF_NewVer
 
         private void QuanLySanPham_Load(object sender, EventArgs e)
         {
-            LoadComboBoxLoc();
-            LoadData();
+            dgvSanPham.RowTemplate.Height = 80;
+
+            // Thêm cột Ảnh bằng tay (nếu nó chưa tồn tại)
+            if (!dgvSanPham.Columns.Contains("Anh"))
+            {
+                DataGridViewImageColumn imgCol = new DataGridViewImageColumn();
+                imgCol.Name = "Anh";
+                imgCol.HeaderText = "Ảnh";
+                imgCol.ImageLayout = DataGridViewImageCellLayout.Zoom;
+                imgCol.Width = 100; // Đặt chiều rộng
+                dgvSanPham.Columns.Insert(0, imgCol); // Chèn vào cột đầu tiên
+            }
+
+            LoadComboBoxLoc(); // Tải CBB
+            LoadData();        // Tải dữ liệu
         }
         private void LoadComboBoxLoc()
         {
@@ -44,29 +58,72 @@ namespace QLCF_NewVer
         // 4. HÀM TẢI DỮ LIỆU LÊN DATAGRIDVIEW
         private void LoadData()
         {
-            var query = db.SanPhamKichCos.Select(spkc => new
-            {
-                spkc.IdSPKC,
-                spkc.MaSP,
-                spkc.SanPham.TenSP,                  // Lấy TenSP từ bảng SanPham
-                KichCo1 = spkc.KichCo.KichCo1,       // Lấy KichCo1 từ bảng KichCo
-                spkc.GiaBan,
-                spkc.SoLuongTon,
-                TenLoai = spkc.SanPham.LoaiSP.TenLoai, // Lấy TenLoai từ bảng LoaiSP
-                spkc.TrangThaiSP
-            });
+            var query = from spkc in db.SanPhamKichCos
+                        join sp in db.SanPhams on spkc.MaSP equals sp.MaSP
+                        join loai in db.LoaiSPs on sp.MaLoai equals loai.MaLoai
+                        join size in db.KichCos on spkc.MaKichCo equals size.MaKichCo
+                        select new
+                        {
+                            spkc.IdSPKC,
+                            sp.MaSP,
+                            sp.TenSP,
+                            sp.MaLoai, // (Theo như ảnh của bạn)
+                            loai.TenLoai,
+                            KichCo = size.KichCo1,
+                            spkc.GiaBan,
+                            spkc.SoLuongTon,
+                            TrangThai = spkc.TrangThaiSP ? "Đang bán" : "Ngừng bán",
+                            sp.DuongDanAnh // <-- LẤY ĐƯỜNG DẪN ẢNH
+                        };
 
             dgvSanPham.DataSource = query.ToList();
+            foreach (DataGridViewRow row in dgvSanPham.Rows)
+            {
+                // Lấy đường dẫn tương đối (vd: "Images/products/espresso.jpg")
+                string relativePath = row.Cells["DuongDanAnh"].Value?.ToString();
+
+                if (string.IsNullOrEmpty(relativePath))
+                {
+                    // (Bạn có thể gán 1 ảnh "No Image" ở đây nếu muốn)
+                    // row.Cells["Anh"].Value = Properties.Resources.no_image;
+                    continue;
+                }
+
+                try
+                {
+                    // Lấy đường dẫn tuyệt đối (vd: "C:/.../bin/Debug/Images/products/espresso.jpg")
+                    string fullPath = Path.Combine(Application.StartupPath, relativePath);
+
+                    if (File.Exists(fullPath))
+                    {
+                        // Tải ảnh. Phải dùng MemoryStream để tránh lỗi "file is in use"
+                        byte[] imageBytes = File.ReadAllBytes(fullPath);
+                        using (MemoryStream ms = new MemoryStream(imageBytes))
+                        {
+                            row.Cells["Anh"].Value = Image.FromStream(ms);
+                        }
+                    }
+                    else
+                    {
+                        // (Gán ảnh "No Image" nếu không tìm thấy file)
+                    }
+                }
+                catch (Exception)
+                {
+                    // (Gán ảnh "Error" nếu file ảnh bị lỗi)
+                }
+            }
 
             // Đặt lại tên cột
             dgvSanPham.Columns["IdSPKC"].Visible = false; // Ẩn cột ID
+            dgvSanPham.Columns["DuongDanAnh"].Visible = false;
             dgvSanPham.Columns["MaSP"].HeaderText = "Mã SP";
             dgvSanPham.Columns["TenSP"].HeaderText = "Tên sản phẩm";
-            dgvSanPham.Columns["KichCo1"].HeaderText = "Size";
+            dgvSanPham.Columns["KichCo"].HeaderText = "Size";
             dgvSanPham.Columns["GiaBan"].HeaderText = "Giá bán";
             dgvSanPham.Columns["SoLuongTon"].HeaderText = "Tồn kho";
             dgvSanPham.Columns["TenLoai"].HeaderText = "Loại SP";
-            dgvSanPham.Columns["TrangThaiSP"].HeaderText = "Trạng thái";
+            dgvSanPham.Columns["TrangThai"].HeaderText = "Trạng thái";
 
             dgvSanPham.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
             _selectedIdSPKC = null; // Reset lựa chọn
@@ -197,6 +254,37 @@ namespace QLCF_NewVer
             _selectedIdSPKC = null;
         }
 
+        private Image LoadImageFromFile(string relativePath)
+        {
+            // Nếu đường dẫn trống, trả về null
+            if (string.IsNullOrEmpty(relativePath))
+                return null;
+
+            try
+            {
+                // 1. Lấy đường dẫn tuyệt đối (vd: "C:/.../bin/Debug/Images/products/abc.jpg")
+                string fullPath = Path.Combine(Application.StartupPath, relativePath);
+
+                // 2. Kiểm tra file có tồn tại không
+                if (File.Exists(fullPath))
+                {
+                    // 3. Tải ảnh. Phải dùng MemoryStream để tránh lỗi "file is in use"
+                    byte[] imageBytes = File.ReadAllBytes(fullPath);
+                    using (MemoryStream ms = new MemoryStream(imageBytes))
+                    {
+                        return Image.FromStream(ms);
+                    }
+                }
+                else
+                {
+                    return null; // Không tìm thấy file
+                }
+            }
+            catch (Exception)
+            {
+                return null; // Ảnh bị lỗi hoặc không đọc được
+            }
+        }
         private void btnMoBanLai_Click(object sender, EventArgs e)
         {
             if (_selectedIdSPKC == null)

@@ -397,3 +397,42 @@ GO
 
 PRINT 'Tạo CSDL QLCF và chèn dữ liệu mẫu thành công!';
 GO
+-- 1. TRIGGER KHI NHẬP KHO
+CREATE TRIGGER tg_UpdateTonKho_Nhap
+ON ChiTietNhapKho
+AFTER INSERT
+AS
+BEGIN
+    UPDATE SanPhamKichCo
+    SET SoLuongTon = SanPhamKichCo.SoLuongTon + i.SoLuongNhap
+    FROM SanPhamKichCo
+    JOIN inserted i ON SanPhamKichCo.IdSPKC = i.IdSPKC;
+END;
+GO
+
+-- 2. TRIGGER KHI BÁN HÀNG (GIẢM TỒN KHO)
+CREATE TRIGGER tg_UpdateTonKho_BanHang
+ON ChiTietHD
+AFTER INSERT
+AS
+BEGIN
+    UPDATE SanPhamKichCo
+    SET SoLuongTon = SanPhamKichCo.SoLuongTon - i.SoLuong
+    FROM SanPhamKichCo
+    JOIN inserted i ON SanPhamKichCo.IdSPKC = i.IdSPKC
+    WHERE i.IsTang = 0; -- Chỉ giảm tồn kho nếu đó là hàng bán (không phải hàng tặng)
+END;
+GO
+
+-- 3. TRIGGER KHI XUẤT HỦY KHO
+CREATE TRIGGER tg_UpdateTonKho_Xuat
+ON ChiTietXuatKho
+AFTER INSERT
+AS
+BEGIN
+    UPDATE SanPhamKichCo
+    SET SoLuongTon = SanPhamKichCo.SoLuongTon - i.SoLuongXuat
+    FROM SanPhamKichCo
+    JOIN inserted i ON SanPhamKichCo.IdSPKC = i.IdSPKC;
+END;
+GO
