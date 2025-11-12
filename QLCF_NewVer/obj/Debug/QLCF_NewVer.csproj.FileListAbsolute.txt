@@ -32,3 +32,4 @@ C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.QuanLyKho
 C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_New.1B58CFE3.Up2Date
 C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.ThemTonKho.resources
 C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.ThemTonKhoMoi.resources
+C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.DoiMatKhau.resources

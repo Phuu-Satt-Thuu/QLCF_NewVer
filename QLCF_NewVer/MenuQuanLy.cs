@@ -61,5 +61,11 @@ namespace QLCF_NewVer
             QuanLyKho frm = new QuanLyKho();
             frm.ShowDialog();
         }
+
+        private void đổiMậtKhẩuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            DoiMatKhau frm = new DoiMatKhau();
+            frm.ShowDialog();
+        }
     }
 }
