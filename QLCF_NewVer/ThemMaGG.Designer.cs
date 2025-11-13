@@ -191,6 +191,7 @@
             this.dgvSanPham.Name = "dgvSanPham";
             this.dgvSanPham.Size = new System.Drawing.Size(398, 201);
             this.dgvSanPham.TabIndex = 41;
+            this.dgvSanPham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellContentClick);
             // 
             // dtpNgayBatDau
             // 

@@ -44,6 +44,8 @@ namespace QLCF_NewVer
             LoadComboBoxes();
             LoadDataGridView();
             LoadDataToForm();
+
+            this.dgvSanPham.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvSanPham_CellContentClick);
         }
         private void LoadComboBoxes()
         {
@@ -55,7 +57,6 @@ namespace QLCF_NewVer
         // 5. HÀM TẢI DATAGRIDVIEW (Sản phẩm)
         private void LoadDataGridView()
         {
-            // (Copy y hệt từ form ThemMaGG)
             if (dgvSanPham.Columns["chkChon"] == null)
             {
                 chkChon = new DataGridViewCheckBoxColumn();
@@ -65,15 +66,19 @@ namespace QLCF_NewVer
                 dgvSanPham.Columns.Add(chkChon);
             }
 
-            var query = db.SanPhamKichCos
-    .Where(spkc => spkc.TrangThaiSP == true) // Lọc trước
-    .Select(spkc => new // Chọn (Select)
-    {
-        spkc.IdSPKC,
-        TenSP = spkc.SanPham.TenSP,     // <-- Lấy từ bảng SanPhams qua Navigation
-        KichCo = spkc.KichCo.KichCo1, // <-- Lấy từ bảng KichCos qua Navigation
-        spkc.GiaBan
-    });
+            // === SỬA LẠI QUERY ĐỂ DÙNG JOIN (AN TOÀN HƠN) ===
+            var query = from spkc in db.SanPhamKichCos
+                        join sp in db.SanPhams on spkc.MaSP equals sp.MaSP
+                        join size in db.KichCos on spkc.MaKichCo equals size.MaKichCo
+                        where spkc.TrangThaiSP == true
+                        select new
+                        {
+                            spkc.IdSPKC,
+                            sp.TenSP,
+                            KichCo = size.KichCo1, // Dùng KichCo1
+                            spkc.GiaBan
+                        };
+            // =============================================
 
             dgvSanPham.DataSource = query.ToList();
             dgvSanPham.Columns["IdSPKC"].Visible = false;
@@ -86,56 +91,50 @@ namespace QLCF_NewVer
         {
             if (_voucherToEdit == null) return;
 
-            // Tải thông tin chung
+            // (Code cũ của bạn: Tải thông tin chung)
             txtMaGG.Text = _voucherToEdit.Code;
             txtTenMaGG.Text = _voucherToEdit.TenMaGiamGia;
             cbbLoaiMaGG.SelectedValue = _voucherToEdit.MaLoaiVC;
             dtpNgayBatDau.Value = _voucherToEdit.NgayBD;
             dtpNgayKetThuc.Value = _voucherToEdit.NgayKT;
-            txtGiaTriDonToiThieu.Text = _voucherToEdit.DieuKien?.ToString("F0"); // F0 = không lẻ
-
-            // Vô hiệu hóa các ô không được sửa
+            txtGiaTriDonToiThieu.Text = _voucherToEdit.DieuKien?.ToString("F0");
             txtMaGG.Enabled = false;
-            cbbLoaiMaGG.Enabled = false;
+            cbbLoaiMaGG.Enabled = false; // (Bạn đã khóa, tốt)
 
-            // Tải thông tin chi tiết và cập nhật giao diện
             int maLoaiVC = _voucherToEdit.MaLoaiVC;
 
-            if (maLoaiVC == 1) // Giảm %
-            {
-                numGiamPhanTram.Value = _voucherToEdit.GiaTri;
-                numGiamPhanTram.Enabled = true;
-                txtGiaTriGiam.Enabled = false;
-                dgvSanPham.Enabled = false;
-            }
-            else if (maLoaiVC == 3) // Giảm giá trị thực
-            {
-                txtGiaTriGiam.Text = _voucherToEdit.GiaTri.ToString("F0");
-                txtGiaTriGiam.Enabled = true;
-                numGiamPhanTram.Enabled = false;
-                dgvSanPham.Enabled = false;
-            }
-            else if (maLoaiVC == 2 || maLoaiVC == 4) // BOGO (Mua 1 Tặng 1)
-            {
-                numGiamPhanTram.Enabled = false;
-                txtGiaTriGiam.Enabled = false;
-                dgvSanPham.Enabled = true;
+            // (Code cũ của bạn: Vô hiệu hóa các ô không liên quan)
+            numGiamPhanTram.Enabled = false;
+            txtGiaTriGiam.Enabled = false;
+            dgvSanPham.Enabled = true;
 
-                // QUAN TRỌNG: Tự động check các sản phẩm đã lưu
-                _originalCheckedSPKC = db.ChiTietVCs
-                                         .Where(ct => ct.MaVC == _maVC)
-                                         .Select(ct => ct.IdSPKC)
-                                         .ToList();
+            // (Code cũ của bạn: Tự động check các sản phẩm đã lưu)
+            _originalCheckedSPKC = db.ChiTietVCs
+                                     .Where(ct => ct.MaVC == _maVC)
+                                     .Select(ct => ct.IdSPKC)
+                                     .ToList();
 
-                foreach (DataGridViewRow row in dgvSanPham.Rows)
+            foreach (DataGridViewRow row in dgvSanPham.Rows)
+            {
+                int idSPKC = (int)row.Cells["IdSPKC"].Value;
+                if (_originalCheckedSPKC.Contains(idSPKC))
                 {
-                    int idSPKC = (int)row.Cells["IdSPKC"].Value;
-                    if (_originalCheckedSPKC.Contains(idSPKC))
-                    {
-                        row.Cells["chkChon"].Value = true;
-                    }
+                    row.Cells["chkChon"].Value = true;
                 }
             }
+
+            // === LOGIC MỚI: KHÓA/MỞ CỘT CHECKBOX ===
+            if (maLoaiVC == 2) // Cùng loại
+            {
+                // Khóa cột check, người dùng không được sửa
+                dgvSanPham.Columns["chkChon"].ReadOnly = true;
+            }
+            else if (maLoaiVC == 4) // Khác loại
+            {
+                // Mở khóa, cho phép chọn 1
+                dgvSanPham.Columns["chkChon"].ReadOnly = false;
+            }
+            // ======================================
         }
 
         private void btnSuaMaGG_Click(object sender, EventArgs e)
@@ -177,6 +176,14 @@ namespace QLCF_NewVer
                     MessageBox.Show("Voucher BOGO phải được áp dụng cho ít nhất 1 sản phẩm.", "Lỗi logic", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
+                int maLoaiVC = _voucherToEdit.MaLoaiVC;
+
+                // Nếu là "Khác loại" (Loại 4) và user chọn nhiều hơn 1
+                if (maLoaiVC == 4 && newlyCheckedSPKC.Count > 1)
+                {
+                    MessageBox.Show("Với loại 'Mua 1 Tặng 1 Khác Loại', bạn chỉ được chọn DUY NHẤT 1 sản phẩm để tặng.", "Lỗi Logic", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
                 // 1. Tìm những SP cần THÊM MỚI
                 List<int> toAdd = newlyCheckedSPKC.Except(_originalCheckedSPKC).ToList();
@@ -212,6 +219,30 @@ namespace QLCF_NewVer
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void dgvSanPham_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex != dgvSanPham.Columns["chkChon"].Index || e.RowIndex < 0)
+                return;
+
+            // 2. Kiểm tra xem có phải mode "BOGO Khác Loại" không
+            if (_voucherToEdit == null || _voucherToEdit.MaLoaiVC != 4) // Chỉ chạy cho "Khác loại" (Loại 4)
+                return;
+
+            // 3. LOGIC ĐỘC QUYỀN CHỌN 1:
+
+            // Bỏ check tất cả các hàng
+            foreach (DataGridViewRow row in dgvSanPham.Rows)
+            {
+                if (row.Index != e.RowIndex) // Bỏ check tất cả, TRỪ hàng vừa click
+                {
+                    row.Cells["chkChon"].Value = false;
+                }
+            }
+
+            // Commit (lưu) ngay lập tức thay đổi của ô vừa click
+            dgvSanPham.CommitEdit(DataGridViewDataErrorContexts.Commit);
         }
     }
 }
