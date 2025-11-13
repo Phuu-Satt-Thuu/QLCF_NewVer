@@ -67,5 +67,11 @@ namespace QLCF_NewVer
             DoiMatKhau frm = new DoiMatKhau();
             frm.ShowDialog();
         }
+
+        private void bánHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           BanHang frm = new BanHang();
+            frm.ShowDialog();
+        }
     }
 }

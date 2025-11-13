@@ -420,7 +420,6 @@ BEGIN
     SET SoLuongTon = SanPhamKichCo.SoLuongTon - i.SoLuong
     FROM SanPhamKichCo
     JOIN inserted i ON SanPhamKichCo.IdSPKC = i.IdSPKC
-    WHERE i.IsTang = 0; -- Chỉ giảm tồn kho nếu đó là hàng bán (không phải hàng tặng)
 END;
 GO
 
