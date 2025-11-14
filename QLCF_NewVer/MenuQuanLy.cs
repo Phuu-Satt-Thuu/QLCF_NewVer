@@ -73,5 +73,11 @@ namespace QLCF_NewVer
            BanHang frm = new BanHang();
             frm.ShowDialog();
         }
+
+        private void thốngKêDoanhThuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ThongKeDoanhThu frm = new ThongKeDoanhThu();
+            frm.ShowDialog();
+        }
     }
 }

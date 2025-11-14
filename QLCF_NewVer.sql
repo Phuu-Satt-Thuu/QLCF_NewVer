@@ -354,40 +354,6 @@ INSERT INTO KieuVC (TenLoai) VALUES
  (N'Giảm giá trị thực'),
  (N'Mua X Tặng Y - Khác loại');
 GO
-
-INSERT INTO Voucher (Code, GiaTri, NgayBD, NgayKT, DieuKien, MaLoaiVC, MaLoai) VALUES
- (N'TEA10P', 10.00, '2025-06-01', '2025-12-31', 0.00, 1, 2); -- 10% cho trà (MaLoai = 2)
-GO
-
--- Thêm Hóa đơn. 
--- TongTienGoc và TienGiam sẽ do ứng dụng tính toán và INSERT vào
--- TongTienSauGiam sẽ tự động = 85000
-INSERT INTO HoaDon (MaKH, MaND, TongTienGoc, TienGiam) VALUES (1, 'NV01', 95000.00, 10000.00);
--- TongTienSauGiam sẽ tự động = 95000
-INSERT INTO HoaDon (MaKH, MaND, TongTienGoc, TienGiam) VALUES (2, 'NV02', 95000.00, 0.00);
-GO
-
--- Áp mã giảm giá cho hóa đơn 1
-INSERT INTO ApMaVC (MaVC, MaHD) VALUES (1, 1);
-GO
-
--- Thêm chi tiết cho hóa đơn
--- (MaHD, IdSPKC, SoLuong, DonGia, IsTang)
-INSERT INTO ChiTietHD (MaHD, IdSPKC, SoLuong, DonGia, IsTang)
-VALUES
- (1, 2, 2, 30000.00, 0), -- 2x Espresso(M) = 60000
- (1, 14, 1, 25000.00, 0), -- 1x Trà Oolong(M) = 25000. (Tổng 85k? -> HĐ 1 Gốc 85k, Giảm 0?)
-                         -- User data: HD1 TongTien 85k. 
-                         -- User data: CTHD (1,2,2,30k), (1,14,1,25k). 60k + 25k = 85k.
-                         -- OK, vậy HĐ 1 gốc 85k, giảm 0. Tôi sẽ sửa INSERT HĐ.
- (2, 19, 1, 45000.00, 0), -- 1x Matcha Freeze(M) = 45k
- (2, 23, 1, 50000.00, 0); -- 1x Bánh Muffin(M) = 50k (Tổng 95k. OK)
-GO
-
--- Sửa lại INSERT Hóa đơn cho khớp với Chi Tiết Hóa Đơn
-UPDATE HoaDon SET TongTienGoc = 85000, TienGiam = 0 WHERE MaHD = 1;
-UPDATE HoaDon SET TongTienGoc = 95000, TienGiam = 0 WHERE MaHD = 2;
-GO
  
 INSERT INTO NhaCungCap (TenNCC) 
 VALUES 

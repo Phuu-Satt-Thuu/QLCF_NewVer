@@ -35,3 +35,4 @@ C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.exe
 C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.pdb
 C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.exe.config
 C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.LuaChonMaGG.resources
+C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.ThongKeDoanhThu.resources

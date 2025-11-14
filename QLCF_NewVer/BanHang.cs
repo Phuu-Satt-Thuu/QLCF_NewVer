@@ -11,6 +11,7 @@ using Microsoft.VisualBasic; // <-- BẮT BUỘC (Và phải cài NuGet "Microso
 using System.IO;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
+using System.Diagnostics.Eventing.Reader;
 
 namespace QLCF_NewVer
 {
@@ -419,6 +420,7 @@ namespace QLCF_NewVer
 
                     PhatSinhFilePDF(hoaDon, gioHang, tienKhachDua, tienThoiLai, diemTichLuyMoi);
                 }
+                this.Close();
             }
             catch (Exception ex)
             {

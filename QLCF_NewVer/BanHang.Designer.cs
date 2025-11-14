@@ -37,7 +37,6 @@
             this.cbbTenKH = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtLoaiKH = new System.Windows.Forms.TextBox();
-            this.txtTongTien = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnThanhToan = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
@@ -50,6 +49,7 @@
             this.txtTienThoiLai = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.txtTongTien = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPham)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSanPhamDaChon)).BeginInit();
             this.SuspendLayout();
@@ -146,14 +146,6 @@
             this.txtLoaiKH.Name = "txtLoaiKH";
             this.txtLoaiKH.Size = new System.Drawing.Size(198, 20);
             this.txtLoaiKH.TabIndex = 44;
-            // 
-            // txtTongTien
-            // 
-            this.txtTongTien.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTongTien.Location = new System.Drawing.Point(234, 208);
-            this.txtTongTien.Name = "txtTongTien";
-            this.txtTongTien.Size = new System.Drawing.Size(198, 20);
-            this.txtTongTien.TabIndex = 79;
             // 
             // label7
             // 
@@ -290,12 +282,22 @@
             this.label5.TabIndex = 89;
             this.label5.Text = "Nhập vào số tiền khách đưa";
             // 
+            // txtTongTien
+            // 
+            this.txtTongTien.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTongTien.Location = new System.Drawing.Point(234, 208);
+            this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.ReadOnly = true;
+            this.txtTongTien.Size = new System.Drawing.Size(198, 20);
+            this.txtTongTien.TabIndex = 91;
+            // 
             // BanHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(1120, 654);
+            this.Controls.Add(this.txtTongTien);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTienKhachDua);
@@ -307,7 +309,6 @@
             this.Controls.Add(this.btnThemVaoGioHang);
             this.Controls.Add(this.btnThanhToan);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.txtTongTien);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtLoaiKH);
             this.Controls.Add(this.label4);
@@ -340,7 +341,6 @@
         private System.Windows.Forms.ComboBox cbbTenKH;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtLoaiKH;
-        private System.Windows.Forms.TextBox txtTongTien;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnThanhToan;
         private System.Windows.Forms.Button btnThoat;
@@ -353,5 +353,6 @@
         private System.Windows.Forms.TextBox txtTienThoiLai;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtTongTien;
     }
 }
