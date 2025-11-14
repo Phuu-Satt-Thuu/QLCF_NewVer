@@ -21,6 +21,13 @@ namespace QLCF_NewVer
 
         private void QuanLyMaGiamGia_Load(object sender, EventArgs e)
         {
+            if (Session.CurrentUser.ViTri != "Admin")
+            {
+                MessageBox.Show("Bạn không có quyền truy cập chức năng này.");
+                this.Close();
+                return;
+            }
+
             LoadComboBoxLoc();
             LoadData();
         }

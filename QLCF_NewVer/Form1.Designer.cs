@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnDNQL = new System.Windows.Forms.Button();
-            this.btnDNNV = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnThoat = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -49,19 +48,6 @@
             this.btnDNQL.UseVisualStyleBackColor = false;
             this.btnDNQL.Click += new System.EventHandler(this.btnDNQL_Click);
             // 
-            // btnDNNV
-            // 
-            this.btnDNNV.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDNNV.BackColor = System.Drawing.Color.Red;
-            this.btnDNNV.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnDNNV.ForeColor = System.Drawing.Color.White;
-            this.btnDNNV.Location = new System.Drawing.Point(294, 264);
-            this.btnDNNV.Name = "btnDNNV";
-            this.btnDNNV.Size = new System.Drawing.Size(212, 62);
-            this.btnDNNV.TabIndex = 1;
-            this.btnDNNV.Text = "Đăng nhập nhân viên";
-            this.btnDNNV.UseVisualStyleBackColor = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -79,7 +65,7 @@
             this.btnThoat.BackColor = System.Drawing.Color.Blue;
             this.btnThoat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(294, 332);
+            this.btnThoat.Location = new System.Drawing.Point(294, 264);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(212, 62);
             this.btnThoat.TabIndex = 3;
@@ -96,7 +82,6 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnDNNV);
             this.Controls.Add(this.btnDNQL);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -109,7 +94,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnDNQL;
-        private System.Windows.Forms.Button btnDNNV;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnThoat;
     }

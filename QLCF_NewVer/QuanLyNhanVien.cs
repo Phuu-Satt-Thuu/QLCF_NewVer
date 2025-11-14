@@ -20,6 +20,18 @@ namespace QLCF_NewVer
         public QuanLyNhanVien()
         {
             InitializeComponent();
+
+            // Enforce access control after initialization.
+            // If current user is not Admin, show message and close the form when it loads.
+            if (Session.CurrentUser.ViTri != "Admin")
+            {
+                this.Load += (s, e) =>
+                {
+                    MessageBox.Show("Bạn không có quyền truy cập chức năng này.");
+                    this.Close();
+                };
+                return;
+            }
         }
 
         private void QuanLyNhanVien_Load(object sender, EventArgs e)

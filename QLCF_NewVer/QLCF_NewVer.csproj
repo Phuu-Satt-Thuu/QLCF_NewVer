@@ -84,6 +84,12 @@
     <Compile Include="LuaChonMaGG.Designer.cs">
       <DependentUpon>LuaChonMaGG.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuNhanVien.Designer.cs">
+      <DependentUpon>MenuNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -208,6 +214,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LuaChonMaGG.resx">
       <DependentUpon>LuaChonMaGG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuNhanVien.resx">
+      <DependentUpon>MenuNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuQuanLy.resx">
       <DependentUpon>MenuQuanLy.cs</DependentUpon>

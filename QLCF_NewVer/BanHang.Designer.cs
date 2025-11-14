@@ -152,6 +152,7 @@
             this.txtTongTien.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtTongTien.Location = new System.Drawing.Point(234, 208);
             this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.ReadOnly = true;
             this.txtTongTien.Size = new System.Drawing.Size(198, 20);
             this.txtTongTien.TabIndex = 79;
             // 

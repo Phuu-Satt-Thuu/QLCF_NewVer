@@ -14,6 +14,12 @@ namespace QLCF_NewVer
     {
         public MenuQuanLy()
         {
+            if (Session.CurrentUser.ViTri != "Admin")
+            {
+                MessageBox.Show("Bạn không có quyền truy cập chức năng này.");
+                return;
+            }
+
             InitializeComponent();
         }
 
@@ -70,7 +76,7 @@ namespace QLCF_NewVer
 
         private void bánHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           BanHang frm = new BanHang();
+            BanHang frm = new BanHang();
             frm.ShowDialog();
         }
     }

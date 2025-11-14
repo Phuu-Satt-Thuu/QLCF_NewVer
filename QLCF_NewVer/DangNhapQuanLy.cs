@@ -70,9 +70,21 @@ namespace QLCF_NewVer
                     Session.Login(user);
                     // --------------------------------------------------------
 
-                    MenuQuanLy frm = new MenuQuanLy();
-                    frm.ShowDialog();
-                    this.Close();
+                    this.Hide();
+                    if (Session.CurrentUser.ViTri == "Admin")
+                    {
+                        MenuQuanLy frm = new MenuQuanLy();
+                        frm.ShowDialog();
+                        //this.Close();
+                    }
+                    else
+                    {
+                        MenuNhanVien frm = new MenuNhanVien();
+                        frm.ShowDialog();
+                        //this.Close();
+                    }
+                    this.Show();
+                    
                 }
                 else
                 {
@@ -84,6 +96,11 @@ namespace QLCF_NewVer
             {
                 MessageBox.Show("Lỗi kết nối CSDL: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void DangNhapQuanLy_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

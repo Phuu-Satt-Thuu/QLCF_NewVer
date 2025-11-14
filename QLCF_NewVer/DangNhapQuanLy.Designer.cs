@@ -123,6 +123,7 @@
             this.Name = "DangNhapQuanLy";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DangNhapQuanLy";
+            this.Load += new System.EventHandler(this.DangNhapQuanLy_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -19,6 +19,12 @@ namespace QLCF_NewVer
         private int? _selectedIdSPKC = null;
         public QuanLySanPham()
         {
+            if (Session.CurrentUser.ViTri != "Admin")
+            {
+                MessageBox.Show("Bạn không có quyền truy cập chức năng này.");
+                return;
+            }
+
             InitializeComponent();
         }
 
