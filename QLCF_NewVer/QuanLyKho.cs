@@ -120,7 +120,7 @@ namespace QLCF_NewVer
         private void btnLamMoi_Click(object sender, EventArgs e)
         {
             txtTimKiem.Clear();
-            cbbLocDuLieu.SelectedIndex = 0;
+            cbbLocDuLieu.SelectedIndex = 5;
             FilterAndLoadData();
         }
 
@@ -252,29 +252,6 @@ namespace QLCF_NewVer
             _selectedIdSPKC = null;
         }
 
-        private void btnThemTonKhoMoi_Click(object sender, EventArgs e)
-        {
-            string message = "Bạn sắp mở chức năng 'Thêm tồn kho MỚI'.\n\n" +
-                     "Chức năng này dùng để **TẠO MỘT SẢN PHẨM MỚI** (chưa từng có) với giá bán và size (ví dụ: tạo 'Bánh Pateso' lần đầu tiên).\n\n" +
-                     "Bạn có muốn tiếp tục không?";
-
-            var confirmResult = MessageBox.Show(message,
-                                                "Xác nhận: Tạo sản phẩm mới",
-                                                MessageBoxButtons.YesNo,
-                                                MessageBoxIcon.Question);
-
-            if (confirmResult == DialogResult.Yes)
-            {
-                // === CODE CŨ CỦA BẠN ===
-                ThemTonKhoMoi f = new ThemTonKhoMoi();
-                var result = f.ShowDialog();
-
-                if (result == DialogResult.OK)
-                {
-                    FilterAndLoadData();
-                }
-            }
-        }
 
         private void dgvTonKho_CellClick(object sender, DataGridViewCellEventArgs e)
         {

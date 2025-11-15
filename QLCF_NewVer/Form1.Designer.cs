@@ -61,6 +61,7 @@
             this.btnDNNV.TabIndex = 1;
             this.btnDNNV.Text = "Đăng nhập nhân viên";
             this.btnDNNV.UseVisualStyleBackColor = false;
+            this.btnDNNV.Click += new System.EventHandler(this.btnDNNV_Click);
             // 
             // pictureBox1
             // 

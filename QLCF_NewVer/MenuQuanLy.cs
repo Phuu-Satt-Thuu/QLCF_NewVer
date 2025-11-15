@@ -79,5 +79,38 @@ namespace QLCF_NewVer
             ThongKeDoanhThu frm = new ThongKeDoanhThu();
             frm.ShowDialog();
         }
+
+        private void lịchSửHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LichSuHoaDon frm = new LichSuHoaDon();
+            frm.ShowDialog();
+        }
+
+        private void MenuQuanLy_Load(object sender, EventArgs e)
+        {
+            timer1.Interval = 1000; // 1000ms = 1 giây
+            timer1.Start(); // Bắt đầu chạy Timer
+
+            // 2. Cập nhật thời gian lần đầu tiên
+            // (Giả sử bạn đã kéo 1 Label tên là lblThoiGian vào góc)
+            timer1_Tick(sender, e);
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblThoiGian.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+        }
+
+        private void lịchSửNhậpKhoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LichSuNhapKho frm = new LichSuNhapKho();
+            frm.ShowDialog();
+        }
+
+        private void lịchSửChấmCôngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            LichSuChamCong frm = new LichSuChamCong();
+            frm.ShowDialog();
+        }
     }
 }

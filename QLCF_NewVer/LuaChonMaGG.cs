@@ -13,7 +13,7 @@ namespace QLCF_NewVer
 {
     public partial class LuaChonMaGG : Form
     {
-        QLCF_NewVerDataContext db;
+        QLCF_NewVerDataContext db = new QLCF_NewVerDataContext();
 
         // 2. PROPERTIES (ĐỂ FORM BANHANG LẤY KẾT QUẢ)
         // =================================================================

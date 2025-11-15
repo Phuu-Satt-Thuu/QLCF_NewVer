@@ -58,23 +58,20 @@ namespace QLCF_NewVer
         // 4. HÀM TẢI DỮ LIỆU LÊN DATAGRIDVIEW
         private void LoadData()
         {
-            var query = from spkc in db.SanPhamKichCos
-                        join sp in db.SanPhams on spkc.MaSP equals sp.MaSP
-                        join loai in db.LoaiSPs on sp.MaLoai equals loai.MaLoai
-                        join size in db.KichCos on spkc.MaKichCo equals size.MaKichCo
-                        select new
-                        {
-                            spkc.IdSPKC,
-                            sp.MaSP,
-                            sp.TenSP,
-                            sp.MaLoai, // (Theo như ảnh của bạn)
-                            loai.TenLoai,
-                            KichCo = size.KichCo1,
-                            spkc.GiaBan,
-                            spkc.SoLuongTon,
-                            TrangThai = spkc.TrangThaiSP ? "Đang bán" : "Ngừng bán",
-                            sp.DuongDanAnh // <-- LẤY ĐƯỜNG DẪN ẢNH
-                        };
+            var query = db.SanPhamKichCos
+            .Select(spkc => new
+            {
+                spkc.IdSPKC,
+                spkc.MaSP, // Lấy MaSP từ spkc
+                spkc.SanPham.TenSP,       // <-- Tự động nối qua SanPham
+                spkc.SanPham.MaLoai,      // <-- Tự động nối qua SanPham
+                spkc.SanPham.LoaiSP.TenLoai, // <-- Tự động nối 2 cấp
+                KichCo = spkc.KichCo.KichCo1, // <-- Tự động nối qua KichCo
+                spkc.GiaBan,
+                spkc.SoLuongTon,
+                TrangThai = spkc.TrangThaiSP ? "Đang bán" : "Ngừng bán",
+                spkc.SanPham.DuongDanAnh  // <-- Tự động nối qua SanPham
+            });
 
             dgvSanPham.DataSource = query.ToList();
             foreach (DataGridViewRow row in dgvSanPham.Rows)

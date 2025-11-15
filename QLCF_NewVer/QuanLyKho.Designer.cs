@@ -38,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnXuatTonKho = new System.Windows.Forms.Button();
-            this.btnThemTonKhoMoi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTonKho)).BeginInit();
             this.SuspendLayout();
             // 
@@ -162,27 +161,12 @@
             this.btnXuatTonKho.UseVisualStyleBackColor = false;
             this.btnXuatTonKho.Click += new System.EventHandler(this.btnXuatTonKho_Click);
             // 
-            // btnThemTonKhoMoi
-            // 
-            this.btnThemTonKhoMoi.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnThemTonKhoMoi.BackColor = System.Drawing.Color.Red;
-            this.btnThemTonKhoMoi.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThemTonKhoMoi.ForeColor = System.Drawing.Color.White;
-            this.btnThemTonKhoMoi.Location = new System.Drawing.Point(192, 380);
-            this.btnThemTonKhoMoi.Name = "btnThemTonKhoMoi";
-            this.btnThemTonKhoMoi.Size = new System.Drawing.Size(165, 58);
-            this.btnThemTonKhoMoi.TabIndex = 74;
-            this.btnThemTonKhoMoi.Text = "Thêm tồn kho mới (chưa có trong danh sách)";
-            this.btnThemTonKhoMoi.UseVisualStyleBackColor = false;
-            this.btnThemTonKhoMoi.Click += new System.EventHandler(this.btnThemTonKhoMoi_Click);
-            // 
             // QuanLyKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnThemTonKhoMoi);
             this.Controls.Add(this.btnXuatTonKho);
             this.Controls.Add(this.btnLamMoi);
             this.Controls.Add(this.btnThemTonKho);
@@ -214,6 +198,5 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnXuatTonKho;
-        private System.Windows.Forms.Button btnThemTonKhoMoi;
     }
 }

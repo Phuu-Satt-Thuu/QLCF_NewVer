@@ -61,6 +61,12 @@
     <Compile Include="BanHang.Designer.cs">
       <DependentUpon>BanHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="DangNhapNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhapNhanVien.Designer.cs">
+      <DependentUpon>DangNhapNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="DangNhapQuanLy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,11 +85,35 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="LichSuChamCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LichSuChamCong.Designer.cs">
+      <DependentUpon>LichSuChamCong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LichSuHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LichSuHoaDon.Designer.cs">
+      <DependentUpon>LichSuHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LichSuNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LichSuNhapKho.Designer.cs">
+      <DependentUpon>LichSuNhapKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="LuaChonMaGG.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LuaChonMaGG.Designer.cs">
       <DependentUpon>LuaChonMaGG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuNhanVien.Designer.cs">
+      <DependentUpon>MenuNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuQuanLy.cs">
       <SubType>Form</SubType>
@@ -189,20 +219,23 @@
     <Compile Include="ThemTonKho.Designer.cs">
       <DependentUpon>ThemTonKho.cs</DependentUpon>
     </Compile>
-    <Compile Include="ThemTonKhoMoi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThemTonKhoMoi.Designer.cs">
-      <DependentUpon>ThemTonKhoMoi.cs</DependentUpon>
-    </Compile>
     <Compile Include="ThongKeDoanhThu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ThongKeDoanhThu.Designer.cs">
       <DependentUpon>ThongKeDoanhThu.cs</DependentUpon>
     </Compile>
+    <Compile Include="XemChiTietHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemChiTietHoaDon.Designer.cs">
+      <DependentUpon>XemChiTietHoaDon.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BanHang.resx">
       <DependentUpon>BanHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DangNhapNhanVien.resx">
+      <DependentUpon>DangNhapNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DangNhapQuanLy.resx">
       <DependentUpon>DangNhapQuanLy.cs</DependentUpon>
@@ -213,8 +246,20 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LichSuChamCong.resx">
+      <DependentUpon>LichSuChamCong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LichSuHoaDon.resx">
+      <DependentUpon>LichSuHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LichSuNhapKho.resx">
+      <DependentUpon>LichSuNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LuaChonMaGG.resx">
       <DependentUpon>LuaChonMaGG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuNhanVien.resx">
+      <DependentUpon>MenuNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuQuanLy.resx">
       <DependentUpon>MenuQuanLy.cs</DependentUpon>
@@ -274,11 +319,11 @@
     <EmbeddedResource Include="ThemTonKho.resx">
       <DependentUpon>ThemTonKho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ThemTonKhoMoi.resx">
-      <DependentUpon>ThemTonKhoMoi.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ThongKeDoanhThu.resx">
       <DependentUpon>ThongKeDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemChiTietHoaDon.resx">
+      <DependentUpon>XemChiTietHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="QLCF_NewVer.dbml.layout">

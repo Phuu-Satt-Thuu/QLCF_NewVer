@@ -37,5 +37,11 @@ namespace QLCF_NewVer
 
             }
         }
+
+        private void btnDNNV_Click(object sender, EventArgs e)
+        {
+            DangNhapNhanVien frm = new DangNhapNhanVien();
+            frm.ShowDialog();
+        }
     }
 }
