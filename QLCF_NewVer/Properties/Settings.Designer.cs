@@ -33,5 +33,16 @@ namespace QLCF_NewVer.Properties {
                 return ((string)(this["QLCF_NewVerConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=.\\SQLEXPRESS;Initial Catalog=QLCF_NewVer;Integrated Security=True;Tru" +
+            "stServerCertificate=True")]
+        public string QLCF_NewVerConnectionString1 {
+            get {
+                return ((string)(this["QLCF_NewVerConnectionString1"]));
+            }
+        }
     }
 }
