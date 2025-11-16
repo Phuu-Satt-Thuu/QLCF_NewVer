@@ -63,7 +63,7 @@
             this.chrThongKe.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.chrThongKe.Legends.Add(legend1);
-            this.chrThongKe.Location = new System.Drawing.Point(15, 424);
+            this.chrThongKe.Location = new System.Drawing.Point(15, 474);
             this.chrThongKe.Name = "chrThongKe";
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
@@ -77,7 +77,7 @@
             // 
             this.dgvHoaDon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHoaDon.Location = new System.Drawing.Point(15, -38);
+            this.dgvHoaDon.Location = new System.Drawing.Point(15, 12);
             this.dgvHoaDon.Name = "dgvHoaDon";
             this.dgvHoaDon.Size = new System.Drawing.Size(913, 386);
             this.dgvHoaDon.TabIndex = 64;
@@ -87,7 +87,7 @@
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(974, 34);
+            this.label8.Location = new System.Drawing.Point(974, 84);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(85, 20);
             this.label8.TabIndex = 68;
@@ -98,7 +98,7 @@
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(987, -11);
+            this.label7.Location = new System.Drawing.Point(987, 39);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 20);
             this.label7.TabIndex = 67;
@@ -107,7 +107,7 @@
             // dtpDenNgay
             // 
             this.dtpDenNgay.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dtpDenNgay.Location = new System.Drawing.Point(1074, 34);
+            this.dtpDenNgay.Location = new System.Drawing.Point(1074, 84);
             this.dtpDenNgay.Name = "dtpDenNgay";
             this.dtpDenNgay.Size = new System.Drawing.Size(165, 20);
             this.dtpDenNgay.TabIndex = 66;
@@ -115,7 +115,7 @@
             // dtpTuNgay
             // 
             this.dtpTuNgay.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dtpTuNgay.Location = new System.Drawing.Point(1074, -11);
+            this.dtpTuNgay.Location = new System.Drawing.Point(1074, 39);
             this.dtpTuNgay.Name = "dtpTuNgay";
             this.dtpTuNgay.Size = new System.Drawing.Size(165, 20);
             this.dtpTuNgay.TabIndex = 65;
@@ -124,7 +124,7 @@
             // 
             this.cbbLoaiSP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbbLoaiSP.FormattingEnabled = true;
-            this.cbbLoaiSP.Location = new System.Drawing.Point(1074, 81);
+            this.cbbLoaiSP.Location = new System.Drawing.Point(1074, 131);
             this.cbbLoaiSP.Name = "cbbLoaiSP";
             this.cbbLoaiSP.Size = new System.Drawing.Size(165, 21);
             this.cbbLoaiSP.TabIndex = 70;
@@ -134,7 +134,7 @@
             this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.Location = new System.Drawing.Point(933, 82);
+            this.label11.Location = new System.Drawing.Point(933, 132);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(126, 20);
             this.label11.TabIndex = 69;
@@ -143,7 +143,7 @@
             // txtTongDoanhThu
             // 
             this.txtTongDoanhThu.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTongDoanhThu.Location = new System.Drawing.Point(214, 351);
+            this.txtTongDoanhThu.Location = new System.Drawing.Point(214, 401);
             this.txtTongDoanhThu.Name = "txtTongDoanhThu";
             this.txtTongDoanhThu.Size = new System.Drawing.Size(271, 20);
             this.txtTongDoanhThu.TabIndex = 81;
@@ -153,7 +153,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(12, 351);
+            this.label1.Location = new System.Drawing.Point(12, 401);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(196, 20);
             this.label1.TabIndex = 80;
@@ -165,7 +165,7 @@
             this.btnLamMoi.BackColor = System.Drawing.Color.Red;
             this.btnLamMoi.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLamMoi.ForeColor = System.Drawing.Color.White;
-            this.btnLamMoi.Location = new System.Drawing.Point(979, 754);
+            this.btnLamMoi.Location = new System.Drawing.Point(979, 804);
             this.btnLamMoi.Name = "btnLamMoi";
             this.btnLamMoi.Size = new System.Drawing.Size(119, 65);
             this.btnLamMoi.TabIndex = 93;
@@ -179,7 +179,7 @@
             this.btnTimKiem.BackColor = System.Drawing.Color.Red;
             this.btnTimKiem.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(1120, 129);
+            this.btnTimKiem.Location = new System.Drawing.Point(1120, 179);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(119, 65);
             this.btnTimKiem.TabIndex = 94;
@@ -193,7 +193,7 @@
             this.btnXuatThongKe.BackColor = System.Drawing.Color.Red;
             this.btnXuatThongKe.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXuatThongKe.ForeColor = System.Drawing.Color.White;
-            this.btnXuatThongKe.Location = new System.Drawing.Point(809, 754);
+            this.btnXuatThongKe.Location = new System.Drawing.Point(809, 804);
             this.btnXuatThongKe.Name = "btnXuatThongKe";
             this.btnXuatThongKe.Size = new System.Drawing.Size(119, 65);
             this.btnXuatThongKe.TabIndex = 95;
@@ -207,7 +207,7 @@
             this.btnThoat.BackColor = System.Drawing.Color.Blue;
             this.btnThoat.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(1153, 754);
+            this.btnThoat.Location = new System.Drawing.Point(1153, 804);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(119, 65);
             this.btnThoat.TabIndex = 96;
@@ -222,7 +222,7 @@
             this.chrBanChay.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.chrBanChay.Legends.Add(legend2);
-            this.chrBanChay.Location = new System.Drawing.Point(536, 424);
+            this.chrBanChay.Location = new System.Drawing.Point(536, 474);
             this.chrBanChay.Name = "chrBanChay";
             series2.ChartArea = "ChartArea1";
             series2.Legend = "Legend1";
@@ -237,7 +237,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(12, 392);
+            this.label2.Location = new System.Drawing.Point(12, 442);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(239, 20);
             this.label2.TabIndex = 98;
@@ -248,7 +248,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(532, 392);
+            this.label3.Location = new System.Drawing.Point(532, 442);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(201, 20);
             this.label3.TabIndex = 99;
@@ -259,7 +259,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Wheat;
-            this.ClientSize = new System.Drawing.Size(1284, 781);
+            this.ClientSize = new System.Drawing.Size(1284, 881);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.chrBanChay);

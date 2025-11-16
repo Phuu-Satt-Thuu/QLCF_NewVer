@@ -70,7 +70,7 @@ namespace QLCF_NewVer
                     Session.Login(user);
                     // --------------------------------------------------------
 
-                    MenuNhanVien frm = new MenuNhanVien();
+                    MenuNhanVien frm = new MenuNhanVien(user.MaND);
                     frm.ShowDialog();
                     this.Close();
                 }

@@ -13,13 +13,14 @@ namespace QLCF_NewVer
     public partial class MenuNhanVien : Form
     {
         QLCF_NewVerDataContext db = new QLCF_NewVerDataContext();
-        private string _maND_DaDangNhap = "NV01";
+        private string _maND_DaDangNhap;
 
         // Biến để lưu ID của ca làm việc HIỆN TẠI
         private int? _currentChamCongId = null;
-        public MenuNhanVien()
+        public MenuNhanVien(string maND)
         {
             InitializeComponent();
+            _maND_DaDangNhap = maND;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -99,7 +100,7 @@ namespace QLCF_NewVer
 
         private void bánHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BanHang frm = new BanHang();
+            BanHang frm = new BanHang(this._maND_DaDangNhap);
             frm.ShowDialog();
         }
 

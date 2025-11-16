@@ -25,7 +25,7 @@ namespace QLCF_NewVer
         private decimal giamGiaPhanTramTheoPhieu = 0;
         private decimal giamGiaTienMatTheoPhieu = 0;
         private List<int> dsIdSPKCTang = new List<int>();
-        private string _maND_DaDangNhap = "AD01";
+        private string _maND_DaDangNhap;
 
         // LỚP GIỮ DỮ LIỆU GIỎ HÀNG
         public class GioHangItem
@@ -38,11 +38,14 @@ namespace QLCF_NewVer
         // ----------------------------------------------------------------------
         // 2. KHỞI TẠO VÀ LOAD FORM
         // =================================================================
-        public BanHang()
+        public BanHang(string maNhanVien)
         {
             InitializeComponent();
             db = new QLCF_NewVerDataContext();
             gioHang = new List<GioHangItem>();
+
+            // GÁN GIÁ TRỊ NHẬN ĐƯỢC CHO BIẾN TOÀN CỤC
+            this._maND_DaDangNhap = maNhanVien;
         }
 
         private void BanHang_Load(object sender, EventArgs e)

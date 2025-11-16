@@ -56,7 +56,7 @@ namespace QLCF_NewVer
                 // Dùng FirstOrDefault để tìm người dùng
                 // So sánh TAIKHOAN và MATKHAU (đã hash)
                 var user = db.NguoiDungs.FirstOrDefault(nd =>
-                               nd.TaiKhoan == tenDangNhap &&
+                               nd.TaiKhoan == tenDangNhap && nd.TaiKhoan == "admin" &&
                                nd.MatKhau == matKhauDaHash
                            );
 
@@ -70,7 +70,7 @@ namespace QLCF_NewVer
                     Session.Login(user);
                     // --------------------------------------------------------
 
-                    MenuQuanLy frm = new MenuQuanLy();
+                    MenuQuanLy frm = new MenuQuanLy(user.MaND);
                     frm.ShowDialog();
                     this.Close();
                 }

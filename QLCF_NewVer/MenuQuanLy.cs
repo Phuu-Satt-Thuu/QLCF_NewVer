@@ -12,9 +12,12 @@ namespace QLCF_NewVer
 {
     public partial class MenuQuanLy : Form
     {
-        public MenuQuanLy()
+        QLCF_NewVerDataContext db = new QLCF_NewVerDataContext();
+        private string _maND_DaDangNhap;
+        public MenuQuanLy(string maND)
         {
             InitializeComponent();
+            _maND_DaDangNhap = maND;
         }
 
         private void danhSáchNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
@@ -70,7 +73,7 @@ namespace QLCF_NewVer
 
         private void bánHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
-           BanHang frm = new BanHang();
+            BanHang frm = new BanHang(this._maND_DaDangNhap);
             frm.ShowDialog();
         }
 
