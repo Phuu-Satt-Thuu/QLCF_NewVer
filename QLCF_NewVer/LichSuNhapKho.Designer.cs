@@ -147,9 +147,9 @@
             this.btnXuatTonKho.ForeColor = System.Drawing.Color.White;
             this.btnXuatTonKho.Location = new System.Drawing.Point(12, 406);
             this.btnXuatTonKho.Name = "btnXuatTonKho";
-            this.btnXuatTonKho.Size = new System.Drawing.Size(119, 34);
+            this.btnXuatTonKho.Size = new System.Drawing.Size(163, 34);
             this.btnXuatTonKho.TabIndex = 113;
-            this.btnXuatTonKho.Text = "Xuất tồn kho";
+            this.btnXuatTonKho.Text = "Xuất lịch sử nhập kho";
             this.btnXuatTonKho.UseVisualStyleBackColor = false;
             this.btnXuatTonKho.Click += new System.EventHandler(this.btnXuatTonKho_Click);
             // 

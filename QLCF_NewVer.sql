@@ -401,3 +401,70 @@ BEGIN
     JOIN inserted i ON SanPhamKichCo.IdSPKC = i.IdSPKC;
 END;
 GO
+
+CREATE VIEW VW_ThongTinHoaDon
+AS
+SELECT
+    hd.MaHD,
+    hd.NgayLap,
+    hd.TongTienGoc,
+    hd.TienGiam,
+    hd.TongTienSauGiam,
+    nv.HoTen AS TenNhanVien,
+    kh.TenKH AS TenKhachHang,
+    -- Lấy mã giảm giá (nếu có)
+    (SELECT TOP 1 v.Code 
+     FROM ApMaVC amv 
+     JOIN Voucher v ON amv.MaVC = v.MaVC 
+     WHERE amv.MaHD = hd.MaHD) AS MaGiamGia
+FROM
+    HoaDon AS hd
+JOIN
+    NguoiDung AS nv ON hd.MaND = nv.MaND
+LEFT JOIN -- Dùng LEFT JOIN vì khách hàng có thể là NULL (khách vãng lai)
+    KhachHang AS kh ON hd.MaKH = kh.MaKH;
+GO
+
+CREATE VIEW VW_ChiTietHoaDon
+AS
+SELECT
+    ct.MaHD,
+    ct.SoLuong,
+    ct.DonGia,
+    ct.ThanhTien,
+    sp.TenSP,
+    kc.KichCo
+FROM
+    ChiTietHD AS ct
+JOIN
+    SanPhamKichCo AS spkc ON ct.IdSPKC = spkc.IdSPKC
+JOIN
+    SanPham AS sp ON spkc.MaSP = sp.MaSP
+JOIN
+    KichCo AS kc ON spkc.MaKichCo = kc.MaKichCo
+GO
+
+CREATE VIEW VW_LichSuNhapKho
+AS
+SELECT
+    nk.NgayNhap,
+    ncc.TenNCC AS TenNhaCungCap,
+    sp.TenSP,
+    kc.KichCo AS Size,
+    ctnk.SoLuongNhap,
+    ctnk.GiaNhap,
+    ctnk.ThanhTien,
+    nk.MaNCC -- Thêm MaNCC để C# có thể lọc
+FROM
+    ChiTietNhapKho AS ctnk
+JOIN
+    NhapKho AS nk ON ctnk.MaNK = nk.MaNK
+JOIN
+    NhaCungCap AS ncc ON nk.MaNCC = ncc.MaNCC
+JOIN
+    SanPhamKichCo AS spkc ON ctnk.IdSPKC = spkc.IdSPKC
+JOIN
+    SanPham AS sp ON spkc.MaSP = sp.MaSP
+JOIN
+    KichCo AS kc ON spkc.MaKichCo = kc.MaKichCo;
+GO

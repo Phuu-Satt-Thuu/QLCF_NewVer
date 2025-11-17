@@ -410,8 +410,22 @@ namespace QLCF_NewVer
                 MessageBox.Show($"Thanh toán thành công! Mã hóa đơn: {hoaDon.MaHD}", "Thành công",
                                 MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                //var printResult = MessageBox.Show("Bạn có muốn in hóa đơn không?", "In hóa đơn",
+                //                                  MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                //if (printResult == DialogResult.Yes)
+                //{
+                //    decimal tienThoiLai = 0;
+                //    if (!string.IsNullOrWhiteSpace(txtTienThoiLai.Text))
+                //    {
+                //        decimal.TryParse(txtTienThoiLai.Text.Replace(".", ""), out tienThoiLai);
+                //    }
+
+                //    PhatSinhFilePDF(hoaDon, gioHang, tienKhachDua, tienThoiLai, diemTichLuyMoi);
+                //}
+                //this.Close();
                 var printResult = MessageBox.Show("Bạn có muốn in hóa đơn không?", "In hóa đơn",
-                                                  MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                                            MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (printResult == DialogResult.Yes)
                 {
@@ -421,7 +435,18 @@ namespace QLCF_NewVer
                         decimal.TryParse(txtTienThoiLai.Text.Replace(".", ""), out tienThoiLai);
                     }
 
-                    PhatSinhFilePDF(hoaDon, gioHang, tienKhachDua, tienThoiLai, diemTichLuyMoi);
+                    // --- BẮT ĐẦU CODE THAY THẾ ---
+
+                    // 1. Gọi form ReportViewer mới
+                    InHoaDon frmIn = new InHoaDon();
+
+                    // 2. Truyền 3 giá trị report cần
+                    frmIn.HienThiHoaDon(hoaDon.MaHD, tienKhachDua, tienThoiLai);
+
+                    // 3. Hiển thị form in
+                    frmIn.ShowDialog();
+
+                    // --- KẾT THÚC CODE THAY THẾ ---
                 }
                 this.Close();
             }

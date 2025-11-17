@@ -39,6 +39,24 @@
     <Reference Include="itextsharp, Version=5.5.13.4, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
       <HintPath>..\packages\iTextSharp.5.5.13.4\lib\net461\itextsharp.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -85,6 +103,24 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="InChiTietHD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InChiTietHD.Designer.cs">
+      <DependentUpon>InChiTietHD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InHoaDon.Designer.cs">
+      <DependentUpon>InHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InLichSuNhapKho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InLichSuNhapKho.Designer.cs">
+      <DependentUpon>InLichSuNhapKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="LichSuChamCong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +164,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLCF_NewVer.dbml</DependentUpon>
     </Compile>
+    <Compile Include="QLCF_NewVerDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCF_NewVerDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="QuanLyKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -159,6 +200,7 @@
       <DependentUpon>QuanLySanPham.cs</DependentUpon>
     </Compile>
     <Compile Include="Session.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="SuaKH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,12 +288,24 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ChiTietHDBanHang.rdlc" />
+    <EmbeddedResource Include="HoaDonBanHang.rdlc" />
+    <EmbeddedResource Include="InChiTietHD.resx">
+      <DependentUpon>InChiTietHD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InHoaDon.resx">
+      <DependentUpon>InHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InLichSuNhapKho.resx">
+      <DependentUpon>InLichSuNhapKho.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LichSuChamCong.resx">
       <DependentUpon>LichSuChamCong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LichSuHoaDon.resx">
       <DependentUpon>LichSuHoaDon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LichSuNhapKho.rdlc" />
     <EmbeddedResource Include="LichSuNhapKho.resx">
       <DependentUpon>LichSuNhapKho.cs</DependentUpon>
     </EmbeddedResource>
@@ -351,6 +405,17 @@
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLCF_NewVerDataSet.xsc">
+      <DependentUpon>QLCF_NewVerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLCF_NewVerDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCF_NewVerDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCF_NewVerDataSet.xss">
+      <DependentUpon>QLCF_NewVerDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Resources\cafe.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -382,6 +447,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\gift-voucher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

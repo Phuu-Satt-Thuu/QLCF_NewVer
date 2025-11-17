@@ -207,90 +207,101 @@ namespace QLCF_NewVer
 
         private void btnXuatTonKho_Click(object sender, EventArgs e)
         {
-            if (_ketQuaTimKiem == null || !_ketQuaTimKiem.Any())
-            {
-                MessageBox.Show("Không có dữ liệu để xuất!");
-                return;
-            }
+            //if (_ketQuaTimKiem == null || !_ketQuaTimKiem.Any())
+            //{
+            //    MessageBox.Show("Không có dữ liệu để xuất!");
+            //    return;
+            //}
 
-            // Lấy thông tin lọc
-            string tuNgay = dtpTuNgay.Value.ToString("dd/MM/yyyy");
-            string denNgay = dtpDenNgay.Value.ToString("dd/MM/yyyy");
-            string tenNCC = cbbNhaCungCap.Text;
-            string tongTien = txtTongTienNhapKho.Text;
+            //// Lấy thông tin lọc
+            //string tuNgay = dtpTuNgay.Value.ToString("dd/MM/yyyy");
+            //string denNgay = dtpDenNgay.Value.ToString("dd/MM/yyyy");
+            //string tenNCC = cbbNhaCungCap.Text;
+            //string tongTien = txtTongTienNhapKho.Text;
 
-            try
-            {
-                // 1. CHUẨN BỊ FONT (Rất quan trọng cho Tiếng Việt)
-                string fontPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts), "Arial.ttf");
-                BaseFont bf = BaseFont.CreateFont(fontPath, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
-                iTextSharp.text.Font fontTieuDe = new iTextSharp.text.Font(bf, 16, iTextSharp.text.Font.BOLD);
-                iTextSharp.text.Font fontDam = new iTextSharp.text.Font(bf, 10, iTextSharp.text.Font.BOLD);
-                iTextSharp.text.Font fontThuong = new iTextSharp.text.Font(bf, 10, iTextSharp.text.Font.NORMAL);
+            //try
+            //{
+            //    // 1. CHUẨN BỊ FONT (Rất quan trọng cho Tiếng Việt)
+            //    string fontPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts), "Arial.ttf");
+            //    BaseFont bf = BaseFont.CreateFont(fontPath, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
+            //    iTextSharp.text.Font fontTieuDe = new iTextSharp.text.Font(bf, 16, iTextSharp.text.Font.BOLD);
+            //    iTextSharp.text.Font fontDam = new iTextSharp.text.Font(bf, 10, iTextSharp.text.Font.BOLD);
+            //    iTextSharp.text.Font fontThuong = new iTextSharp.text.Font(bf, 10, iTextSharp.text.Font.NORMAL);
 
-                // 2. TẠO FILE
-                string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), $"LichSuNhapKho_{DateTime.Now:yyyyMMdd_HHmmss}.pdf");
-                Document document = new Document(PageSize.A4.Rotate(), 40, 40, 40, 40); // Xoay ngang
-                PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(filePath, FileMode.Create));
-                document.Open();
+            //    // 2. TẠO FILE
+            //    string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Desktop), $"LichSuNhapKho_{DateTime.Now:yyyyMMdd_HHmmss}.pdf");
+            //    Document document = new Document(PageSize.A4.Rotate(), 40, 40, 40, 40); // Xoay ngang
+            //    PdfWriter writer = PdfWriter.GetInstance(document, new FileStream(filePath, FileMode.Create));
+            //    document.Open();
 
-                // 3. THÊM NỘI DUNG
-                Paragraph tieuDe = new Paragraph("LỊCH SỬ NHẬP KHO", fontTieuDe);
-                tieuDe.Alignment = Element.ALIGN_CENTER;
-                document.Add(tieuDe);
-                document.Add(new Paragraph($"Từ ngày: {tuNgay} - Đến ngày: {denNgay}", fontThuong));
-                document.Add(new Paragraph($"Nhà cung cấp: {tenNCC}", fontThuong));
-                document.Add(Chunk.NEWLINE);
+            //    // 3. THÊM NỘI DUNG
+            //    Paragraph tieuDe = new Paragraph("LỊCH SỬ NHẬP KHO", fontTieuDe);
+            //    tieuDe.Alignment = Element.ALIGN_CENTER;
+            //    document.Add(tieuDe);
+            //    document.Add(new Paragraph($"Từ ngày: {tuNgay} - Đến ngày: {denNgay}", fontThuong));
+            //    document.Add(new Paragraph($"Nhà cung cấp: {tenNCC}", fontThuong));
+            //    document.Add(Chunk.NEWLINE);
 
-                // 4. Bảng chi tiết
-                PdfPTable table = new PdfPTable(7); // 7 cột
-                table.WidthPercentage = 100;
-                table.SetWidths(new float[] { 20f, 25f, 25f, 8f, 8f, 12f, 12f });
+            //    // 4. Bảng chi tiết
+            //    PdfPTable table = new PdfPTable(7); // 7 cột
+            //    table.WidthPercentage = 100;
+            //    table.SetWidths(new float[] { 20f, 25f, 25f, 8f, 8f, 12f, 12f });
 
-                // Header
-                table.AddCell(new Phrase("Ngày Nhập", fontDam));
-                table.AddCell(new Phrase("Nhà Cung Cấp", fontDam));
-                table.AddCell(new Phrase("Sản Phẩm", fontDam));
-                table.AddCell(new Phrase("Size", fontDam));
-                table.AddCell(new Phrase("SL Nhập", fontDam));
-                table.AddCell(new Phrase("Giá Nhập", fontDam));
-                table.AddCell(new Phrase("Thành Tiền", fontDam));
+            //    // Header
+            //    table.AddCell(new Phrase("Ngày Nhập", fontDam));
+            //    table.AddCell(new Phrase("Nhà Cung Cấp", fontDam));
+            //    table.AddCell(new Phrase("Sản Phẩm", fontDam));
+            //    table.AddCell(new Phrase("Size", fontDam));
+            //    table.AddCell(new Phrase("SL Nhập", fontDam));
+            //    table.AddCell(new Phrase("Giá Nhập", fontDam));
+            //    table.AddCell(new Phrase("Thành Tiền", fontDam));
 
-                // Thêm các dòng
-                foreach (var item in _ketQuaTimKiem)
-                {
-                    table.AddCell(new Phrase(item.NgayNhap.ToString("dd/MM/yyyy HH:mm"), fontThuong));
-                    table.AddCell(new Phrase(item.TenNCC, fontThuong));
-                    table.AddCell(new Phrase(item.TenSP, fontThuong));
-                    table.AddCell(new Phrase(item.Size.ToString(), fontThuong));
-                    table.AddCell(new Phrase(item.SoLuongNhap.ToString(), fontThuong));
-                    table.AddCell(new Phrase(item.GiaNhap.ToString("N0"), fontThuong));
-                    table.AddCell(new Phrase(item.ThanhTien.ToString("N0"), fontThuong));
-                }
-                document.Add(table);
-                document.Add(Chunk.NEWLINE);
+            //    // Thêm các dòng
+            //    foreach (var item in _ketQuaTimKiem)
+            //    {
+            //        table.AddCell(new Phrase(item.NgayNhap.ToString("dd/MM/yyyy HH:mm"), fontThuong));
+            //        table.AddCell(new Phrase(item.TenNCC, fontThuong));
+            //        table.AddCell(new Phrase(item.TenSP, fontThuong));
+            //        table.AddCell(new Phrase(item.Size.ToString(), fontThuong));
+            //        table.AddCell(new Phrase(item.SoLuongNhap.ToString(), fontThuong));
+            //        table.AddCell(new Phrase(item.GiaNhap.ToString("N0"), fontThuong));
+            //        table.AddCell(new Phrase(item.ThanhTien.ToString("N0"), fontThuong));
+            //    }
+            //    document.Add(table);
+            //    document.Add(Chunk.NEWLINE);
 
-                // 5. Tổng kết
-                Paragraph tongKet = new Paragraph($"TỔNG TIỀN NHẬP KHO: {tongTien}", fontDam);
-                tongKet.Alignment = Element.ALIGN_RIGHT;
-                document.Add(tongKet);
+            //    // 5. Tổng kết
+            //    Paragraph tongKet = new Paragraph($"TỔNG TIỀN NHẬP KHO: {tongTien}", fontDam);
+            //    tongKet.Alignment = Element.ALIGN_RIGHT;
+            //    document.Add(tongKet);
 
-                document.Close();
-                writer.Close();
+            //    document.Close();
+            //    writer.Close();
 
-                System.Diagnostics.Process.Start(filePath); // Tự động mở file
-            }
-            catch (Exception ex)
-            {
-                if (ex is System.IO.IOException)
-                {
-                    MessageBox.Show($"Lỗi: Không thể ghi file PDF. File có thể đang được mở.\n{ex.Message}", "Lỗi Xuất PDF", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    MessageBox.Show("Lỗi khi tạo file PDF: " + ex.Message, "Lỗi Xuất PDF", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
+            //    System.Diagnostics.Process.Start(filePath); // Tự động mở file
+            //}
+            //catch (Exception ex)
+            //{
+            //    if (ex is System.IO.IOException)
+            //    {
+            //        MessageBox.Show($"Lỗi: Không thể ghi file PDF. File có thể đang được mở.\n{ex.Message}", "Lỗi Xuất PDF", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Lỗi khi tạo file PDF: " + ex.Message, "Lỗi Xuất PDF", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //    }
+            //}
+            DateTime tuNgay = dtpTuNgay.Value.Date;
+            DateTime denNgay = dtpDenNgay.Value.Date.AddDays(1).AddSeconds(-1);
+
+            // Lấy Nhà cung cấp (dựa theo ComboBox của bạn)
+            int maNCC = (int)cbbNhaCungCap.SelectedValue; // (MaNCC = 0 là "Tất cả")
+            string tenNCC = cbbNhaCungCap.Text; // (Tên hiển thị là "--- Tất cả nhà cung cấp ---")
+
+            // 2. GỌI FORM REPORTVIEWER MỚI
+            // Form InLichSuNhapKho sẽ tự chạy query với các tham số này
+            InLichSuNhapKho frmReport = new InLichSuNhapKho(tuNgay, denNgay, maNCC, tenNCC);
+            frmReport.ShowDialog();
         }
     }
 }

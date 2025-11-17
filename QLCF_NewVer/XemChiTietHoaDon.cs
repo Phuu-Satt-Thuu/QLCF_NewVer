@@ -180,7 +180,8 @@ namespace QLCF_NewVer
 
         private void btnXuatHoaDon_Click(object sender, EventArgs e)
         {
-            PhatSinhFilePDF(_hoaDonDuLieu);
+            InChiTietHD frmReport = new InChiTietHD(_maHD);
+            frmReport.ShowDialog();
         }
         private void PhatSinhFilePDF(HoaDon hoaDonToPrint)
         {

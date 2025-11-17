@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="QLCF_NewVer" Class="QLCF_NewVerDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=.\SQLEXPRESS;Initial Catalog=QLCF_NewVer;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="QLCF_NewVer.Properties.Settings" SettingsPropertyName="QLCF_NewVerConnectionString1" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-7660KT7;Initial Catalog=QLCF_NewVer;Integrated Security=True;Trust Server Certificate=True" SettingsObjectName="QLCF_NewVer.Properties.Settings" SettingsPropertyName="QLCF_NewVerConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.ApMaVC" Member="ApMaVCs">
     <Type Name="ApMaVC">
       <Column Name="MaAP" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -195,6 +195,40 @@
       <Association Name="Voucher_ChiTietVC" Member="ChiTietVCs" ThisKey="MaVC" OtherKey="MaVC" Type="ChiTietVC" />
       <Association Name="KieuVC_Voucher" Member="KieuVC" ThisKey="MaLoaiVC" OtherKey="MaLoaiVC" Type="KieuVC" IsForeignKey="true" />
       <Association Name="LoaiSP_Voucher" Member="LoaiSP" ThisKey="MaLoai" OtherKey="MaLoai" Type="LoaiSP" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VW_ChiTietHoaDon" Member="VW_ChiTietHoaDons">
+    <Type Name="VW_ChiTietHoaDon">
+      <Column Name="MaHD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SoLuong" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DonGia" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="ThanhTien" Type="System.Decimal" DbType="Decimal(29,2)" CanBeNull="true" />
+      <Column Name="TenSP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="KichCo" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VW_ThongTinHoaDon" Member="VW_ThongTinHoaDons">
+    <Type Name="VW_ThongTinHoaDon">
+      <Column Name="MaHD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NgayLap" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TongTienGoc" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="TienGiam" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="TongTienSauGiam" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
+      <Column Name="TenNhanVien" Type="System.String" DbType="NVarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="TenKhachHang" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="MaGiamGia" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.VW_LichSuNhapKho" Member="VW_LichSuNhapKhos">
+    <Type Name="VW_LichSuNhapKho">
+      <Column Name="NgayNhap" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="TenNhaCungCap" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="TenSP" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Size" Type="System.Char" DbType="Char(1) NOT NULL" CanBeNull="false" />
+      <Column Name="SoLuongNhap" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="GiaNhap" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="ThanhTien" Type="System.Decimal" DbType="Decimal(29,2)" CanBeNull="true" />
+      <Column Name="MaNCC" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
 </Database>

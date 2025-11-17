@@ -175,7 +175,7 @@ namespace QLCF_NewVer
                 var confirm = MessageBox.Show($"Bạn có chắc chắn muốn XÓA VĨNH VIỄN khách hàng này?\n\n" +
                                               $"Tên: {khachHang.TenKH}\n" +
                                               $"SĐT: {khachHang.SDT}\n\n" +
-                                              $"(Các hóa đơn cũ của họ sẽ bị 'mồ côi' - mất liên kết)",
+                                              $"(Các hóa đơn cũ của họ sẽ bị mất liên kết)",
                                               "Xác nhận xóa", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
                 if (confirm == DialogResult.Yes)
