@@ -279,4 +279,3 @@ C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.csproj.Co
 C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_New.1B58CFE3.Up2Date
 C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.exe
 C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.pdb
-C:\Users\toiye\Downloads\QLCF_NewVer\QLCF_NewVer\obj\Debug\QLCF_NewVer.exe.config

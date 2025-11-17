@@ -48,6 +48,7 @@
             this.ClientSize = new System.Drawing.Size(630, 450);
             this.Controls.Add(this.reportViewer1);
             this.Name = "InChiTietHD";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InChiTietHD";
             this.Load += new System.EventHandler(this.InChiTietHD_Load);
             this.ResumeLayout(false);

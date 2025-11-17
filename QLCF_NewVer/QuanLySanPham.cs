@@ -74,55 +74,7 @@ namespace QLCF_NewVer
             });
 
             dgvSanPham.DataSource = query.ToList();
-            foreach (DataGridViewRow row in dgvSanPham.Rows)
-            {
-                // Lấy đường dẫn tương đối (vd: "Images/products/espresso.jpg")
-                string relativePath = row.Cells["DuongDanAnh"].Value?.ToString();
-
-                if (string.IsNullOrEmpty(relativePath))
-                {
-                    // (Bạn có thể gán 1 ảnh "No Image" ở đây nếu muốn)
-                    // row.Cells["Anh"].Value = Properties.Resources.no_image;
-                    continue;
-                }
-
-                try
-                {
-                    // Lấy đường dẫn tuyệt đối (vd: "C:/.../bin/Debug/Images/products/espresso.jpg")
-                    string fullPath = Path.Combine(Application.StartupPath, relativePath);
-
-                    if (File.Exists(fullPath))
-                    {
-                        // Tải ảnh. Phải dùng MemoryStream để tránh lỗi "file is in use"
-                        byte[] imageBytes = File.ReadAllBytes(fullPath);
-                        using (MemoryStream ms = new MemoryStream(imageBytes))
-                        {
-                            row.Cells["Anh"].Value = Image.FromStream(ms);
-                        }
-                    }
-                    else
-                    {
-                        // (Gán ảnh "No Image" nếu không tìm thấy file)
-                    }
-                }
-                catch (Exception)
-                {
-                    // (Gán ảnh "Error" nếu file ảnh bị lỗi)
-                }
-            }
-
-            // Đặt lại tên cột
-            dgvSanPham.Columns["IdSPKC"].Visible = false; // Ẩn cột ID
-            dgvSanPham.Columns["DuongDanAnh"].Visible = false;
-            dgvSanPham.Columns["MaSP"].HeaderText = "Mã SP";
-            dgvSanPham.Columns["TenSP"].HeaderText = "Tên sản phẩm";
-            dgvSanPham.Columns["KichCo"].HeaderText = "Size";
-            dgvSanPham.Columns["GiaBan"].HeaderText = "Giá bán";
-            dgvSanPham.Columns["SoLuongTon"].HeaderText = "Tồn kho";
-            dgvSanPham.Columns["TenLoai"].HeaderText = "Loại SP";
-            dgvSanPham.Columns["TrangThai"].HeaderText = "Trạng thái";
-
-            dgvSanPham.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+            LoadImagesAndSetupColumns();
             _selectedIdSPKC = null; // Reset lựa chọn
         }
 
@@ -155,14 +107,17 @@ namespace QLCF_NewVer
                 spkc.IdSPKC,
                 spkc.MaSP,
                 spkc.SanPham.TenSP,
-                KichCo1 = spkc.KichCo.KichCo1,
+                spkc.SanPham.MaLoai,
+                spkc.SanPham.LoaiSP.TenLoai,
+                KichCo = spkc.KichCo.KichCo1,
                 spkc.GiaBan,
                 spkc.SoLuongTon,
-                TenLoai = spkc.SanPham.LoaiSP.TenLoai,
-                spkc.TrangThaiSP
+                TrangThai = spkc.TrangThaiSP ? "Đang bán" : "Ngừng bán",
+                spkc.SanPham.DuongDanAnh
             });
 
             dgvSanPham.DataSource = result.ToList();
+            LoadImagesAndSetupColumns();
         }
 
         private void dgvSanPham_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -281,6 +236,72 @@ namespace QLCF_NewVer
             {
                 return null; // Ảnh bị lỗi hoặc không đọc được
             }
+        }
+
+        // Hàm tải ảnh vào DataGridView và cập nhật tiêu đề cột
+        private void LoadImagesAndSetupColumns()
+        {
+            foreach (DataGridViewRow row in dgvSanPham.Rows)
+            {
+                // Lấy đường dẫn tương đối (vd: "Images/products/espresso.jpg")
+                string relativePath = row.Cells["DuongDanAnh"].Value?.ToString();
+
+                if (string.IsNullOrEmpty(relativePath))
+                {
+                    // (Bạn có thể gán 1 ảnh "No Image" ở đây nếu muốn)
+                    // row.Cells["Anh"].Value = Properties.Resources.no_image;
+                    continue;
+                }
+
+                try
+                {
+                    // Lấy đường dẫn tuyệt đối (vd: "C:/.../bin/Debug/Images/products/espresso.jpg")
+                    string fullPath = Path.Combine(Application.StartupPath, relativePath);
+
+                    if (File.Exists(fullPath))
+                    {
+                        // Tải ảnh. Phải dùng MemoryStream để tránh lỗi "file is in use"
+                        byte[] imageBytes = File.ReadAllBytes(fullPath);
+                        using (MemoryStream ms = new MemoryStream(imageBytes))
+                        {
+                            row.Cells["Anh"].Value = Image.FromStream(ms);
+                        }
+                    }
+                    else
+                    {
+                        // (Gán ảnh "No Image" nếu không tìm thấy file)
+                    }
+                }
+                catch (Exception)
+                {
+                    // (Gán ảnh "Error" nếu file ảnh bị lỗi)
+                }
+            }
+
+            // Đặt lại tên cột và ẩn các cột không cần thiết
+            if (dgvSanPham.Columns.Contains("IdSPKC"))
+                dgvSanPham.Columns["IdSPKC"].Visible = false; // Ẩn cột ID
+            if (dgvSanPham.Columns.Contains("DuongDanAnh"))
+                dgvSanPham.Columns["DuongDanAnh"].Visible = false;
+            if (dgvSanPham.Columns.Contains("MaLoai"))
+                dgvSanPham.Columns["MaLoai"].Visible = false;
+
+            if (dgvSanPham.Columns.Contains("MaSP"))
+                dgvSanPham.Columns["MaSP"].HeaderText = "Mã SP";
+            if (dgvSanPham.Columns.Contains("TenSP"))
+                dgvSanPham.Columns["TenSP"].HeaderText = "Tên sản phẩm";
+            if (dgvSanPham.Columns.Contains("KichCo"))
+                dgvSanPham.Columns["KichCo"].HeaderText = "Size";
+            if (dgvSanPham.Columns.Contains("GiaBan"))
+                dgvSanPham.Columns["GiaBan"].HeaderText = "Giá bán";
+            if (dgvSanPham.Columns.Contains("SoLuongTon"))
+                dgvSanPham.Columns["SoLuongTon"].HeaderText = "Tồn kho";
+            if (dgvSanPham.Columns.Contains("TenLoai"))
+                dgvSanPham.Columns["TenLoai"].HeaderText = "Loại SP";
+            if (dgvSanPham.Columns.Contains("TrangThai"))
+                dgvSanPham.Columns["TrangThai"].HeaderText = "Trạng thái";
+
+            dgvSanPham.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
         }
         private void btnMoBanLai_Click(object sender, EventArgs e)
         {
