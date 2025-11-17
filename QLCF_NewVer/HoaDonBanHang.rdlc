@@ -125,9 +125,9 @@
             </Paragraphs>
             <rd:DefaultName>Textbox2</rd:DefaultName>
             <Top>0.1203cm</Top>
-            <Left>6.21453cm</Left>
+            <Left>4.28307cm</Left>
             <Height>0.73201cm</Height>
-            <Width>5.70146cm</Width>
+            <Width>9.88188cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -613,7 +613,7 @@
             <Top>4.12433cm</Top>
             <Left>0.47307cm</Left>
             <Height>1.2cm</Height>
-            <Width>17.63826cm</Width>
+            <Width>17.63825cm</Width>
             <ZIndex>5</ZIndex>
             <Style>
               <Border>
@@ -840,10 +840,10 @@
         <Height>5.71875in</Height>
         <Style />
       </Body>
-      <Width>7.40959in</Width>
+      <Width>8.34709in</Width>
       <Page>
-        <PageHeight>29.7cm</PageHeight>
-        <PageWidth>21cm</PageWidth>
+        <PageHeight>21cm</PageHeight>
+        <PageWidth>29.7cm</PageWidth>
         <LeftMargin>2cm</LeftMargin>
         <RightMargin>2cm</RightMargin>
         <TopMargin>2cm</TopMargin>

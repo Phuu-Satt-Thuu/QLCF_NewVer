@@ -77,9 +77,9 @@
             // 
             this.dgvHoaDon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgvHoaDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHoaDon.Location = new System.Drawing.Point(15, 12);
+            this.dgvHoaDon.Location = new System.Drawing.Point(15, 39);
             this.dgvHoaDon.Name = "dgvHoaDon";
-            this.dgvHoaDon.Size = new System.Drawing.Size(913, 386);
+            this.dgvHoaDon.Size = new System.Drawing.Size(913, 359);
             this.dgvHoaDon.TabIndex = 64;
             // 
             // label8
